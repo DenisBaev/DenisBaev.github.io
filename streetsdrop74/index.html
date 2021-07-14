@@ -670,7 +670,8 @@ function handleComplete(evt,comp) {
 	}
 	exportRoot = new lib.Streetsdrop74();
 	stage = new lib.Stage(canvas);
-	stage.enableMouseOver();	
+	stage.enableMouseOver();
+	createjs.Touch.enable(stage);
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);
