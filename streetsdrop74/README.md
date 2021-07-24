@@ -4,7 +4,7 @@
 ___
 
 <p align="center">
-  <img src="http://cd-recordable.narod.ru/streetdrop74/screens/coverpic.jpg">
+  <img src="http://denisbaev.github.io/streetsdrop74/images/coverpic.jpg">
 </p>
 
 ### Description
@@ -13,7 +13,7 @@ ___
 In this training game, you need to guess in which district of city (Chelyabinsk, in this case) there are existing streets. 
 At the beginning of the game, you have randomly: 3 squares with district names and 8 signs with street names (2 signs for each district + 2 signs with invented streets).
 
-![Screenshot](http://cd-recordable.narod.ru/streetdrop74/screens/screen01.jpg "Game screenshot")
+![Screenshot](http://denisbaev.github.io/streetsdrop74/images/screen01.jpg "Game screenshot")
 
 With the mouse you need to drag the signs into the corresponding square (district of the city). Invented streets need to be dragged into the trash can. :put_litter_in_its_place:
 After droping the sign over the target district - a frame appears around it, symbolizing the correctness of the drop. A green frame means a correct drop :heavy_check_mark: (while the sign dissolves in the square of the district). Red frame - incorrect drop :x: (at that the sign returns to the original position).
