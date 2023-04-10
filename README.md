@@ -6,7 +6,12 @@
 <br>
 ### Примеры готовых работ (HTML5 + JS):
 <br>
+<h2><a href="https://denisbaev.github.io/ddnumbers/"> Перетащи цифру</a></h2> 
 
+
+#### Игра, помогающая запомнить написание и произношение чисел на английском языке.
+
+___
 
 <h2><a href="https://denisbaev.github.io/streetsdrop74"> Streetdroper</a></h2>
 
