@@ -183,13 +183,13 @@ p.nominalBounds = new cjs.Rectangle(0,0,70,70);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой_2
-	this.text = new cjs.Text("Начать заново", "16px 'Arial'", "#003300");
-	this.text.lineHeight = 20;
+	this.text = new cjs.Text("Начать заново", "14px 'Arial'", "#003300");
+	this.text.lineHeight = 18;
 	this.text.lineWidth = 110;
 	this.text.parent = this;
-	this.text.setTransform(2.65,3.5);
+	this.text.setTransform(7.65,3.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.text).wait(1).to({color:"#FFFFFF"},0).wait(1).to({scaleX:0.9416,scaleY:0.9416,x:5.85,y:4},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.text).wait(1).to({color:"#FFFFFF"},0).wait(1).to({scaleX:0.9416,scaleY:0.9416,x:11.85,y:4,lineWidth:99},0).wait(1));
 
 	// Слой_1
 	this.instance = new lib.CachedTexturedBitmap_3();
@@ -207,7 +207,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,70,70);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-0.4,-0.4,116.60000000000001,26.5);
+p.nominalBounds = new cjs.Rectangle(-0.4,-0.4,120.10000000000001,26.5);
 
 
 (lib.Bukva = function(mode,startPosition,loop) {
@@ -544,7 +544,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/happy new hangman_atlas_.png?1682300483313", id:"happy new hangman_atlas_"}
+		{src:"images/happy new hangman_atlas_.png", id:"happy new hangman_atlas_"}
 	],
 	preloads: []
 };
