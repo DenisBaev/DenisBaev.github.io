@@ -307,11 +307,13 @@ p.nominalBounds = new cjs.Rectangle(-0.4,-0.4,116.60000000000001,26.5);
 				window.parent.letrues++;
 				if (window.parent.letrues==window.parent.w.length) {
 					window.parent.attempts=0;
-					createjs.Sound.play("win");
+					var win = new Audio('./sound/win.mp3');
+					win.play();
 					window.parent.changeTextInFields("Слово угадано! :-)","");
 					root.continue_btn.visible=true;
 				}else{
-					createjs.Sound.play("openletter");
+					var openletter = new Audio('./sound/openletter.mp3');
+					openletter.play();
 				}
 				}
 				t++;
@@ -320,12 +322,16 @@ p.nominalBounds = new cjs.Rectangle(-0.4,-0.4,116.60000000000001,26.5);
 				root.tf.text=String(root.tf.text - 1);
 				//monster moving
 				window.parent.ms++;
-				createjs.Sound.play("mousestep" + String(window.parent.ms));
+				if (window.parent.ms<7) {//озвучка (с шага 2)		
+					var mousestep = new Audio('./sound/mouse_step' + '0' + String(window.parent.ms) + '.mp3');		
+					mousestep.play();
+		}			
 				root.mouse.x += 135;
 				root.mouse.y -= 22;
 				if (window.parent.attempts==0) {
 				root.gman.visible=false;
-				createjs.Sound.play("eaten");		
+				var eaten = new Audio('./sound/eaten.mp3');//fail
+					eaten.play();		
 				window.parent.changeTextInFields("Печеньку съели :-(","");
 				setTimeout(window.parent.openWord, 3100);
 				}
@@ -574,7 +580,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/happy new hangman_atlas_.png", id:"happy new hangman_atlas_"}
+		{src:"images/happy new hangman_atlas_.png?1682654701611", id:"happy new hangman_atlas_"}
 	],
 	preloads: []
 };
