@@ -580,7 +580,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/happy new hangman_atlas_.png?1682654701611", id:"happy new hangman_atlas_"}
+		{src:"images/happy new hangman_atlas_.png", id:"happy new hangman_atlas_"}
 	],
 	preloads: []
 };
