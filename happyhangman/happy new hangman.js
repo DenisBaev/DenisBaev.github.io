@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"happy new hangman_atlas_", frames: [[1938,316,105,105],[1828,316,108,108],[1102,469,277,63],[1687,448,277,63],[1381,469,261,60],[1687,316,139,130],[1687,0,302,314],[0,0,1100,620],[0,622,975,50],[0,674,1100,33],[1102,0,583,467],[1966,423,70,70]]}
+		{name:"happy new hangman_atlas_", frames: [[1938,316,105,105],[1102,469,277,63],[1828,316,108,108],[1687,448,277,63],[1381,469,261,60],[1687,316,139,130],[977,622,223,24],[977,648,223,24],[1102,534,210,23],[1687,0,302,314],[0,0,1100,620],[0,622,975,50],[0,674,1100,33],[1102,0,583,467],[1966,423,70,70]]}
 ];
 
 
@@ -18,14 +18,14 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedTexturedBitmap_2 = function() {
+(lib.CachedTexturedBitmap_10 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_3 = function() {
+(lib.CachedTexturedBitmap_2 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
@@ -53,44 +53,65 @@ lib.ssMetadata = [
 
 
 
-(lib.gingerman = function() {
+(lib.CachedTexturedBitmap_7 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.gm_background2 = function() {
+(lib.CachedTexturedBitmap_8 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.head01 = function() {
+(lib.CachedTexturedBitmap_9 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.head02 = function() {
+(lib.gingerman = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.mouse_white = function() {
+(lib.gm_background2 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.onlettersh = function() {
+(lib.head01 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.head02 = function() {
+	this.initialize(ss["happy new hangman_atlas_"]);
+	this.gotoAndStop(12);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.mouse_white = function() {
+	this.initialize(ss["happy new hangman_atlas_"]);
+	this.gotoAndStop(13);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.onlettersh = function() {
+	this.initialize(ss["happy new hangman_atlas_"]);
+	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -183,31 +204,37 @@ p.nominalBounds = new cjs.Rectangle(0,0,70,70);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой_2
-	this.text = new cjs.Text("Начать заново", "14px 'Arial'", "#003300");
-	this.text.lineHeight = 18;
-	this.text.lineWidth = 110;
-	this.text.parent = this;
-	this.text.setTransform(7.65,3.5);
-
-	this.timeline.addTween(cjs.Tween.get(this.text).wait(1).to({color:"#FFFFFF"},0).wait(1).to({scaleX:0.9416,scaleY:0.9416,x:11.85,y:4,lineWidth:99},0).wait(1));
-
-	// Слой_1
-	this.instance = new lib.CachedTexturedBitmap_3();
+	this.instance = new lib.CachedTexturedBitmap_7();
 	this.instance.parent = this;
-	this.instance.setTransform(-0.45,-0.45,0.4209,0.4209);
+	this.instance.setTransform(8.75,6.1,0.4209,0.4209);
 
-	this.instance_1 = new lib.CachedTexturedBitmap_4();
+	this.instance_1 = new lib.CachedTexturedBitmap_8();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(-0.45,-0.45,0.4209,0.4209);
+	this.instance_1.setTransform(8.75,6.1,0.4209,0.4209);
 
-	this.instance_2 = new lib.CachedTexturedBitmap_5();
+	this.instance_2 = new lib.CachedTexturedBitmap_9();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(2.9,0.25,0.4209,0.4209);
+	this.instance_2.setTransform(12.9,6.4,0.4209,0.4209);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
 
+	// Слой_1
+	this.instance_3 = new lib.CachedTexturedBitmap_10();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(-0.45,-0.45,0.4209,0.4209);
+
+	this.instance_4 = new lib.CachedTexturedBitmap_4();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(-0.45,-0.45,0.4209,0.4209);
+
+	this.instance_5 = new lib.CachedTexturedBitmap_5();
+	this.instance_5.parent = this;
+	this.instance_5.setTransform(2.9,0.25,0.4209,0.4209);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3}]}).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).wait(1));
+
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-0.4,-0.4,120.10000000000001,26.5);
+p.nominalBounds = new cjs.Rectangle(-0.4,-0.4,116.60000000000001,26.5);
 
 
 (lib.Bukva = function(mode,startPosition,loop) {
@@ -220,12 +247,16 @@ p.nominalBounds = new cjs.Rectangle(-0.4,-0.4,120.10000000000001,26.5);
 		this.stop();
 		this.letfield.color="DarkGreen";
 		
+		var selectletter = new Audio('./sound/selectletter.mp3');
+		
 		pb = false; //нажата ли буква
 		
 		this.on('click', function (e){	
 		
 		if ((window.parent.attempts!=0) && (pb==false)){
-		createjs.Sound.play("selectletter");
+			
+		selectletter.play();
+			
 		t = 0;
 		z = 0;
 			
@@ -362,7 +393,6 @@ p.nominalBounds = new cjs.Rectangle(-2.7,-0.1,54,54);
 		
 		this.continue_btn.on('click', function (e){
 			//location.reload();
-			createjs.Sound.play("selectletter");
 			root.gotoAndPlay(1);
 		});
 		
