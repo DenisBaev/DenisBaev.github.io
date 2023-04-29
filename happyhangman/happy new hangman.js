@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"happy new hangman_atlas_", frames: [[1938,316,105,105],[1828,316,108,108],[977,648,223,24],[977,622,223,24],[1102,534,210,23],[1687,448,277,63],[1102,469,277,63],[1381,469,261,60],[1687,316,139,130],[1687,0,302,314],[0,0,1100,620],[0,622,975,50],[0,674,1100,33],[1102,0,583,467],[1966,423,70,70]]}
+		{name:"happy new hangman_atlas_", frames: [[1938,316,105,105],[1966,495,75,26],[1879,513,75,26],[1956,523,64,22],[1644,513,233,53],[1381,531,233,53],[1102,534,220,50],[1828,316,108,108],[1616,568,223,24],[1102,586,223,24],[1327,586,210,23],[1687,448,277,63],[1102,469,277,63],[1381,469,261,60],[1687,316,139,130],[1687,0,302,314],[0,0,1100,620],[0,622,1100,620],[0,1244,975,50],[0,1296,1100,33],[1102,0,583,467],[1966,423,70,70]]}
 ];
 
 
@@ -18,100 +18,149 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedTexturedBitmap_2 = function() {
+(lib.CachedTexturedBitmap_10 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_3 = function() {
+(lib.CachedTexturedBitmap_11 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_4 = function() {
+(lib.CachedTexturedBitmap_12 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_5 = function() {
+(lib.CachedTexturedBitmap_13 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_6 = function() {
+(lib.CachedTexturedBitmap_14 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_7 = function() {
+(lib.CachedTexturedBitmap_15 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_8 = function() {
+(lib.CachedTexturedBitmap_2 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_9 = function() {
+(lib.CachedTexturedBitmap_3 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.gingerman = function() {
+(lib.CachedTexturedBitmap_4 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.gm_background2 = function() {
+(lib.CachedTexturedBitmap_5 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.head01 = function() {
+(lib.CachedTexturedBitmap_6 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.head02 = function() {
+(lib.CachedTexturedBitmap_7 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.mouse_white = function() {
+(lib.CachedTexturedBitmap_8 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.onlettersh = function() {
+(lib.CachedTexturedBitmap_9 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(14);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.gingerman = function() {
+	this.initialize(ss["happy new hangman_atlas_"]);
+	this.gotoAndStop(15);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.gm_background2 = function() {
+	this.initialize(ss["happy new hangman_atlas_"]);
+	this.gotoAndStop(16);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Hangmancover = function() {
+	this.initialize(ss["happy new hangman_atlas_"]);
+	this.gotoAndStop(17);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.head01 = function() {
+	this.initialize(ss["happy new hangman_atlas_"]);
+	this.gotoAndStop(18);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.head02 = function() {
+	this.initialize(ss["happy new hangman_atlas_"]);
+	this.gotoAndStop(19);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.mouse_white = function() {
+	this.initialize(ss["happy new hangman_atlas_"]);
+	this.gotoAndStop(20);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.onlettersh = function() {
+	this.initialize(ss["happy new hangman_atlas_"]);
+	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -130,6 +179,43 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	prototype.frameBounds = frameBounds;
 	return prototype;
 	}
+
+
+(lib.StartBtn = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Слой_2
+	this.instance = new lib.CachedTexturedBitmap_10();
+	this.instance.parent = this;
+	this.instance.setTransform(37.35,6.45,0.5,0.5);
+
+	this.instance_1 = new lib.CachedTexturedBitmap_11();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(37.35,6.45,0.5,0.5);
+
+	this.instance_2 = new lib.CachedTexturedBitmap_12();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(42.25,7,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
+
+	// Слой_1
+	this.instance_3 = new lib.CachedTexturedBitmap_13();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(-0.5,-0.5,0.5,0.5);
+
+	this.instance_4 = new lib.CachedTexturedBitmap_14();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(-0.5,-0.5,0.5,0.5);
+
+	this.instance_5 = new lib.CachedTexturedBitmap_15();
+	this.instance_5.parent = this;
+	this.instance_5.setTransform(2.9,0.25,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3}]}).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-0.5,-0.5,116.5,26.5);
 
 
 (lib.ScreenBukva = function(mode,startPosition,loop) {
@@ -387,12 +473,26 @@ p.nominalBounds = new cjs.Rectangle(-2.7,-0.1,54,54);
 
 // stage content:
 (lib.happynewhangman = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{Main:0,Refresh:1});
+	this.initialize(mode,startPosition,loop,{Start:0,Main:1,Refresh:2});
 
 	// timeline functions:
 	this.frame_0 = function() {
 		root = this;
+		this.stop();
 		
+		function trace(a) {
+			return console.log(a);
+		}
+		
+		root.start_btn.on('click', function (e){
+			exportRoot.gotoAndStop(1);
+			
+		});
+		
+		//кол-во партий
+		game = 0;
+	}
+	this.frame_1 = function() {
 		this.stop();
 		
 		this.continue_btn.visible=false;
@@ -500,7 +600,7 @@ p.nominalBounds = new cjs.Rectangle(-2.7,-0.1,54,54);
 		//Monster steps
 		ms=1;
 	}
-	this.frame_1 = function() {
+	this.frame_2 = function() {
 		//Refresh scene;
 		
 		//очищаем слово
@@ -520,12 +620,20 @@ p.nominalBounds = new cjs.Rectangle(-2.7,-0.1,54,54);
 		
 		//увеличиваем счетчик партий
 		game++;
+		
+		exportRoot.gotoAndStop(1);
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1).call(this.frame_2).wait(1));
 
 	// FIELDS
+	this.start_btn = new lib.StartBtn();
+	this.start_btn.name = "start_btn";
+	this.start_btn.parent = this;
+	this.start_btn.setTransform(509.2,541.15);
+	new cjs.ButtonHelper(this.start_btn, 0, 1, 2);
+
 	this.continue_btn = new lib.ContinueBtn();
 	this.continue_btn.name = "continue_btn";
 	this.continue_btn.parent = this;
@@ -548,23 +656,25 @@ p.nominalBounds = new cjs.Rectangle(-2.7,-0.1,54,54);
 	this.mtf.parent = this;
 	this.mtf.setTransform(938.5,503.2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.mtf},{t:this.tf},{t:this.continue_btn}]}).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.start_btn}]}).to({state:[{t:this.mtf},{t:this.tf},{t:this.continue_btn}]},1).wait(2));
 
 	// MOUSE
 	this.mouse = new lib.Mouse();
 	this.mouse.name = "mouse";
 	this.mouse.parent = this;
 	this.mouse.setTransform(73.05,326.2,1,1,0,0,0,71.5,57.2);
+	this.mouse._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.mouse).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.mouse).wait(1).to({_off:false},0).wait(2));
 
 	// GINGER
 	this.gman = new lib.Gingerman();
 	this.gman.name = "gman";
 	this.gman.parent = this;
 	this.gman.setTransform(919,209.05,1,1,0,0,0,35,36.4);
+	this.gman._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.gman).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.gman).wait(1).to({_off:false},0).wait(2));
 
 	// GYR
 	this.instance = new lib.head02();
@@ -575,13 +685,16 @@ p.nominalBounds = new cjs.Rectangle(-2.7,-0.1,54,54);
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(0,2,1.0005,1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1},{t:this.instance}]},1).wait(2));
 
 	// BACK
-	this.instance_2 = new lib.gm_background2();
+	this.instance_2 = new lib.Hangmancover();
 	this.instance_2.parent = this;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(2));
+	this.instance_3 = new lib.gm_background2();
+	this.instance_3.parent = this;
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2}]}).to({state:[{t:this.instance_3}]},1).wait(2));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(550,310,550,310);
@@ -594,7 +707,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/happy new hangman_atlas_.png?1682660742675", id:"happy new hangman_atlas_"}
+		{src:"images/happy new hangman_atlas_.png", id:"happy new hangman_atlas_"}
 	],
 	preloads: []
 };
