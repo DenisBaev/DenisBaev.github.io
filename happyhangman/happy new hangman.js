@@ -355,7 +355,7 @@ p.nominalBounds = new cjs.Rectangle(-0.4,-0.4,116.60000000000001,26.5);
 		
 		pb = true;	
 			
-		ax=this.x+23.9;
+		ax=this.x+24.5;
 		ay=this.y+27.3;
 		
 		var deegres = 0;
