@@ -19,7 +19,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"Streetsdrop74_atlas_", frames: [[0,0,1100,620],[1190,838,524,100],[1438,572,310,264],[1750,829,240,47],[1750,780,251,47],[1716,878,201,47],[526,893,331,47],[1716,927,192,47],[624,622,332,47],[859,893,232,47],[312,622,310,264],[0,888,524,100],[624,783,564,108],[624,671,566,110],[1504,0,334,284],[1102,385,334,284],[1504,286,334,284],[0,622,310,264],[1192,671,150,128],[1840,520,150,128],[1840,0,150,128],[1840,130,150,128],[1840,260,150,128],[1840,390,150,128],[1750,650,150,128],[1102,0,400,383]]}
+		{name:"Streetsdrop74_atlas_", frames: [[0,0,1100,620],[1190,838,524,100],[1438,572,310,264],[1750,829,240,47],[1750,780,251,47],[1716,878,201,47],[526,893,331,47],[1716,927,192,47],[624,622,332,47],[859,893,232,47],[312,622,310,264],[0,888,524,100],[624,783,564,108],[624,671,566,110],[1504,0,334,284],[1102,385,334,284],[1504,286,334,284],[0,622,310,264],[1840,520,150,128],[1192,671,150,128],[1840,0,150,128],[1840,130,150,128],[1840,260,150,128],[1840,390,150,128],[1750,650,150,128],[1102,0,400,383]]}
 ];
 // symbols:
 (lib.bg74 = function() {
@@ -213,8 +213,8 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 				var dB = targarrt[this.name.charAt(4)-1].getTransformedBounds();
 				//gsap.to(this, {x: dB.x+50, y: dB.y+70, alpha: 0, duration: .5});
 				this.visible=false;
-				targarrt[this.name.charAt(4)-1].dframe.gotoAndPlay("greenf");
-				targarrt[this.name.charAt(4)-1].droparea.gotoAndPlay("right");
+				targarrt[this.name.charAt(4)-1].dframe.gotoAndPlay(1);
+				targarrt[this.name.charAt(4)-1].droparea.gotoAndPlay(1);
 				rs++;
 				if (rs==8) {
 					setTimeout(runComplete, 500);
@@ -548,7 +548,7 @@ lib.properties = {
 	color: "#EFF5ED",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Streetsdrop74_atlas_.png?1684141256113", id:"Streetsdrop74_atlas_"}
+		{src:"images/Streetsdrop74_atlas_.png?1684141798597", id:"Streetsdrop74_atlas_"}
 	],
 	preloads: []
 };
