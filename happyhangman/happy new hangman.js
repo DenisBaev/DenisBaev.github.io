@@ -479,8 +479,8 @@ p.nominalBounds = new cjs.Rectangle(-2.7,-0.1,54,54);
 		//root.start_btn.gotoAndStop(0);
 		
 		this.start_btn.on('click', function (e) {
-			//exportRoot.gotoAndStop(1);
-			this.gotoAndStop(this.currentFrame + 1);
+			exportRoot.gotoAndStop(1);
+			//this.gotoAndStop(this.currentFrame + 1);
 		});
 	}
 	this.frame_1 = function() {
