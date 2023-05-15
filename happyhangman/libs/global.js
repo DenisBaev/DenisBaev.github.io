@@ -1,6 +1,8 @@
 //кол-во партий
 game = 0;
 
+exportRoot.gotoAndStop(0);
+
 //загадываем слово
 function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
