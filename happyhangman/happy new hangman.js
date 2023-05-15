@@ -485,7 +485,6 @@ p.nominalBounds = new cjs.Rectangle(-2.7,-0.1,54,54);
 	this.frame_1 = function() {
 		this.stop();
 		
-		
 		this.continue_btn.visible=false;
 		
 		this.continue_btn.on('click', function (e){
@@ -583,7 +582,7 @@ p.nominalBounds = new cjs.Rectangle(-2.7,-0.1,54,54);
 		//увеличиваем счетчик партий
 		game++;
 		
-		exportRoot.gotoAndStop(1);
+		//exportRoot.gotoAndStop(1);
 	}
 
 	// actions tween:
@@ -669,7 +668,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/happy new hangman_atlas_.png", id:"happy new hangman_atlas_"}
+		{src:"images/happy new hangman_atlas_.png?1684120953216", id:"happy new hangman_atlas_"}
 	],
 	preloads: []
 };
