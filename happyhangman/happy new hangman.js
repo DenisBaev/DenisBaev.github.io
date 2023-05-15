@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"happy new hangman_atlas_", frames: [[1938,316,105,105],[1966,495,75,26],[1879,513,75,26],[1956,523,64,22],[1644,513,233,53],[1381,531,233,53],[1102,534,220,50],[1828,316,108,108],[1102,586,223,24],[1616,568,223,24],[1327,586,210,23],[1687,448,277,63],[1102,469,277,63],[1381,469,261,60],[1687,316,139,130],[1687,0,302,314],[0,0,1100,620],[0,622,1100,620],[0,1244,975,50],[0,1296,1100,33],[1102,0,583,467],[1966,423,70,70]]}
+		{name:"happy new hangman_atlas_", frames: [[1938,316,105,105],[1966,495,75,26],[1879,513,75,26],[1956,523,64,22],[1644,513,233,53],[1381,531,233,53],[1102,534,220,50],[1616,568,223,24],[1102,586,223,24],[1828,316,108,108],[1327,586,210,23],[1687,448,277,63],[1102,469,277,63],[1381,469,261,60],[1687,316,139,130],[1687,0,302,314],[0,622,1100,620],[0,0,1100,620],[0,1244,975,50],[0,1296,1100,33],[1102,0,583,467],[1966,423,70,70]]}
 ];
 
 
@@ -60,21 +60,21 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedTexturedBitmap_2 = function() {
+(lib.CachedTexturedBitmap_16 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_3 = function() {
+(lib.CachedTexturedBitmap_17 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_4 = function() {
+(lib.CachedTexturedBitmap_2 = function() {
 	this.initialize(ss["happy new hangman_atlas_"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
@@ -290,11 +290,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,70,70);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой_2
-	this.instance = new lib.CachedTexturedBitmap_3();
+	this.instance = new lib.CachedTexturedBitmap_16();
 	this.instance.parent = this;
 	this.instance.setTransform(8.75,6.1,0.4209,0.4209);
 
-	this.instance_1 = new lib.CachedTexturedBitmap_4();
+	this.instance_1 = new lib.CachedTexturedBitmap_17();
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(8.75,6.1,0.4209,0.4209);
 
@@ -480,11 +480,12 @@ p.nominalBounds = new cjs.Rectangle(-2.7,-0.1,54,54);
 		
 		this.start_btn.on('click', function (e) {
 			exportRoot.gotoAndStop(1);
-			//this.gotoAndStop(this.currentFrame + 1);
+			//root.gotoAndStop(this.currentFrame + 1);
 		});
 	}
 	this.frame_1 = function() {
 		this.stop();
+		
 		
 		this.continue_btn.visible=false;
 		
@@ -584,6 +585,8 @@ p.nominalBounds = new cjs.Rectangle(-2.7,-0.1,54,54);
 		game++;
 		
 		exportRoot.gotoAndStop(1);
+		
+		this.continue_btn.gotoAndStop(0);
 	}
 
 	// actions tween:
