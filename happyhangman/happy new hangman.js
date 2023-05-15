@@ -582,7 +582,7 @@ p.nominalBounds = new cjs.Rectangle(-2.7,-0.1,54,54);
 		//увеличиваем счетчик партий
 		game++;
 		
-		//exportRoot.gotoAndStop(1);
+		exportRoot.gotoAndStop(1);
 	}
 
 	// actions tween:
