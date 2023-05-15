@@ -11,7 +11,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>Streetsdrop74</title>
+<title>Дропнулица</title>
+<link rel="shortcut icon" href="#">
 <!-- write your code here -->
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script>
@@ -19,7 +20,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"Streetsdrop74_atlas_", frames: [[0,0,1100,620],[0,888,524,100],[0,622,310,264],[1750,829,240,47],[1750,780,251,47],[1716,878,201,47],[526,893,331,47],[1716,927,192,47],[624,622,332,47],[859,893,232,47],[1190,838,524,100],[624,783,564,108],[624,671,566,110],[1504,0,334,284],[1504,286,334,284],[1102,385,334,284],[312,622,310,264],[1438,572,310,264],[1840,0,150,128],[1192,671,150,128],[1840,260,150,128],[1840,390,150,128],[1840,520,150,128],[1840,130,150,128],[1750,650,150,128],[1102,0,400,383]]}
+		{name:"Streetsdrop74_atlas_", frames: [[0,0,1100,620],[1190,838,524,100],[1438,572,310,264],[1750,829,240,47],[1750,780,251,47],[1716,878,201,47],[526,893,331,47],[1716,927,192,47],[624,622,332,47],[859,893,232,47],[0,888,524,100],[624,783,564,108],[624,671,566,110],[1504,0,334,284],[1102,385,334,284],[1504,286,334,284],[0,622,310,264],[312,622,310,264],[1840,130,150,128],[1192,671,150,128],[1840,0,150,128],[1840,390,150,128],[1840,260,150,128],[1840,520,150,128],[1750,650,150,128],[1102,0,400,383]]}
 ];
 // symbols:
 (lib.bg74 = function() {
@@ -152,9 +153,6 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 		this.on("mouseout", function () {
 		        document.body.style.cursor = "default";
 		      });
-		/*this.on('click', function (e){
-		 alert(window.parent.stkeyarr);
-		});*/
 		var targarrt = [this.parent.targ1, this.parent.targ2, this.parent.targ3, this.parent.targ4];
 		//массивы с улицами
 		var diststrarr1 = ["","Болейко","Каслинская","Механическая","Партизанская","Ижевская","Герцена","Турбинная","Ферросплавная","Шадринская","Стартовая","Кислицина","Развития","Отрадная","Кожзаводская"];
@@ -172,15 +170,15 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 		this.addChild(st);
 		if (this.name.charAt(8)<7) {
 			 if (this.name.charAt(8)%2!=0) {
-			st.text="ул." + ds[window.parent.keyarr[this.name.charAt(4)-1]][window.parent.stkeyarr[4]];
+			st.text="ул." + ds[keyarr[this.name.charAt(4)-1]][stkeyarr[4]];
 			 } else {
-			st.text="ул." + ds[window.parent.keyarr[this.name.charAt(4)-1]][window.parent.stkeyarr[3]]; 
+			st.text="ул." + ds[keyarr[this.name.charAt(4)-1]][stkeyarr[3]]; 
 			 }
 		} else {
 			if (this.name.charAt(8)=="7") {
-				st.text="ул." + ds[8][window.parent.stkeyarr[2]];
+				st.text="ул." + ds[8][stkeyarr[2]];
 			} else {
-				st.text="ул." + ds[8][window.parent.stkeyarr[1]];
+				st.text="ул." + ds[8][stkeyarr[1]];
 			 }
 		}
 		gtw = st.getBounds().width;
@@ -192,8 +190,8 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 		shape.graphics.beginStroke("white").beginFill("#0000CC").drawRect(0,1,gtw+5,25);
 		stage.update();
 		//координаты таблички
-		this.x=window.parent.coordx[this.name.charAt(8)-1];
-		this.y=window.parent.coordy[this.name.charAt(8)-1];
+		this.x=coordx[this.name.charAt(8)-1];
+		this.y=coordy[this.name.charAt(8)-1];
 		var origx = this.x;
 		var origy = this.y;
 		//drag'n'move
@@ -218,9 +216,9 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 				this.visible=false;
 				targarrt[this.name.charAt(4)-1].dframe.gotoAndPlay("greenf");
 				targarrt[this.name.charAt(4)-1].droparea.gotoAndPlay("right");
-				window.parent.rs++;
-				if (window.parent.rs==8) {
-					setTimeout(window.parent.runComplete, 500);
+				rs++;
+				if (rs==8) {
+					setTimeout(runComplete, 500);
 				}
 				gsap.to(this, {alpha: 0, duration: 1});
 				stage.update(evt);
@@ -234,7 +232,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 					});
 					if (da) {
 					gsap.to(this, {x: origx, y: origy, duration: 1});
-					window.parent.errcount++;
+					errcount++;
 					da=false;
 				}
 					}	
@@ -354,7 +352,7 @@ p.nominalBounds = new cjs.Rectangle(-3.5,-0.4,283,55);
 	this.frame_0 = function() {
 		this.stop();
 		if (this.name.charAt(4)!=4) {
-		this.gotoAndStop(window.parent.keyarr[this.name.charAt(4)-1]);
+		this.gotoAndStop(keyarr[this.name.charAt(4)-1]);
 		}else{
 			this.gotoAndStop(8);
 		}
@@ -430,34 +428,20 @@ p.nominalBounds = new cjs.Rectangle(0,-23.4,171.2,165.4);
 	this.initialize(mode,startPosition,loop,{});
 	// timeline functions:
 	this.frame_0 = function() {
-		createjs.Touch.enable(stage);
 		this.stop();
-		var root = this;
-		//кол-во правильно дропнутых улиц:	
-		rs = 0;
-		//случайный вывод районов
-		keyarr = [];
+		root = this;
 		while (keyarr.length<7) {
 			key = getRandomInt(1, 7);
 			if (keyarr.indexOf(key)==-1) {
 			keyarr.push(key);
 			}
 			}
-		//случайный выбор улицы
-		stkeyarr = [];
 		while (stkeyarr.length<14) {
 			skey = getRandomInt(1, 14);
 			if (stkeyarr.indexOf(skey)==-1) {
 			stkeyarr.push(skey);
 			}
 			}
-		function getRandomInt(min, max) {
-			return Math.floor(Math.random() * (max - min + 1)) + min;
-		}
-		//случ. координаты
-		coordx = [];
-		coordy = [];
-		d=0;
 		while (d<8) {
 			cx = getRandomInt(300, 920);
 			cy = getRandomInt(300, 500);
@@ -465,27 +449,12 @@ p.nominalBounds = new cjs.Rectangle(0,-23.4,171.2,165.4);
 			coordy.push(cy);
 			d++;
 		}
-		//таймер
-		second = -1;
-		clock = setInterval(function() {
-			second++;
-		}, 1000);	
 		root.tmr.text="";
-		//функция "выполнено"
-		runComplete = function(){
-		 root.tmr.text="Выполнено за " + second + " сек.";
-		 clearInterval(clock);
-		 root.rbtn.visible=true;
-		 root.errct.visible=true;
-		 root.errct.text="Кол-во ошибок: " + errcount;
-		}
 		//перезагрузить
 		root.rbtn.on('click', function (e){
 		window.location.reload();
 		});
 		root.rbtn.visible=false;
-		//счетчик ошибок
-		errcount=0;
 		root.errct.visible=false;
 	}
 	// actions tween:
@@ -579,7 +548,7 @@ lib.properties = {
 	color: "#EFF5ED",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Streetsdrop74_atlas_.png", id:"Streetsdrop74_atlas_"}
+		{src:"images/Streetsdrop74_atlas_.png?1684139453491", id:"Streetsdrop74_atlas_"}
 	],
 	preloads: []
 };
@@ -663,6 +632,38 @@ an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers)
 })(createjs = createjs||{}, AdobeAn = AdobeAn||{});
 var createjs, AdobeAn;
 </script>
+<script>
+// Global Scripts
+	//createjs.Touch.enable(stage);
+//кол-во правильно дропнутых улиц:	
+rs = 0;
+//случайный вывод районов
+keyarr = [];
+//случайный выбор улицы
+stkeyarr = [];
+function getRandomInt(min, max) {
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+//случ. координаты
+coordx = [];
+coordy = [];
+d=0;
+//таймер
+second = -1;
+clock = setInterval(function() {
+	second++;
+}, 1000);	
+//функция "выполнено"
+function runComplete (){
+ exportRoot.tmr.text="Выполнено за " + second + " сек.";
+ clearInterval(clock);
+ root.rbtn.visible=true;
+ root.errct.visible=true;
+ root.errct.text="Кол-во ошибок: " + errcount;
+}
+//счетчик ошибок
+errcount=0;
+//</script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js'></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
