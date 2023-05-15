@@ -472,9 +472,9 @@ p.nominalBounds = new cjs.Rectangle(-2.7,-0.1,54,54);
 	this.initialize(mode,startPosition,loop,{Start:0,Main:1,Refresh:2});
 
 	// timeline functions:
-	this.frame_0 = function() {
-		this.stop();
+	this.frame_0 = function() {		
 		root = this;
+		this.stop();
 		
 		root.start_btn.gotoAndStop(0);
 		
