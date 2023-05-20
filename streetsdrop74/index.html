@@ -19,7 +19,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"Streetsdrop74_atlas_", frames: [[0,0,1100,620],[1190,838,524,100],[1438,572,310,264],[1750,829,240,47],[1750,780,251,47],[1716,878,201,47],[526,893,331,47],[1716,927,192,47],[624,622,332,47],[859,893,232,47],[312,622,310,264],[0,888,524,100],[624,783,564,108],[624,671,566,110],[1504,0,334,284],[1102,385,334,284],[1504,286,334,284],[0,622,310,264],[1192,671,150,128],[1840,0,150,128],[1840,130,150,128],[1840,260,150,128],[1840,390,150,128],[1840,520,150,128],[1750,650,150,128],[1102,0,400,383]]}
+		{name:"Streetsdrop74_atlas_", frames: [[0,0,1100,620],[0,888,524,100],[312,622,310,264],[1750,829,240,47],[1750,780,251,47],[1716,878,201,47],[526,893,331,47],[1716,927,192,47],[624,622,332,47],[859,893,232,47],[1190,838,524,100],[624,783,564,108],[624,671,566,110],[1504,0,334,284],[1504,286,334,284],[1102,385,334,284],[0,622,310,264],[1438,572,310,264],[1840,0,150,128],[1840,390,150,128],[1750,650,150,128],[1840,130,150,128],[1840,520,150,128],[1192,671,150,128],[1840,260,150,128],[1102,0,400,383]]}
 ];
 // symbols:
 (lib.bg74 = function() {
@@ -62,31 +62,31 @@ lib.ssMetadata = [
 	this.initialize(ss["Streetsdrop74_atlas_"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
-(lib.CachedTexturedBitmap_18 = function() {
+(lib.CachedTexturedBitmap_2 = function() {
 	this.initialize(ss["Streetsdrop74_atlas_"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
-(lib.CachedTexturedBitmap_2 = function() {
+(lib.CachedTexturedBitmap_3 = function() {
 	this.initialize(ss["Streetsdrop74_atlas_"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
-(lib.CachedTexturedBitmap_3 = function() {
+(lib.CachedTexturedBitmap_4 = function() {
 	this.initialize(ss["Streetsdrop74_atlas_"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
-(lib.CachedTexturedBitmap_4 = function() {
+(lib.CachedTexturedBitmap_5 = function() {
 	this.initialize(ss["Streetsdrop74_atlas_"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
-(lib.CachedTexturedBitmap_5 = function() {
+(lib.CachedTexturedBitmap_6 = function() {
 	this.initialize(ss["Streetsdrop74_atlas_"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
-(lib.CachedTexturedBitmap_6 = function() {
+(lib.CachedTexturedBitmap_7 = function() {
 	this.initialize(ss["Streetsdrop74_atlas_"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
-(lib.CachedTexturedBitmap_7 = function() {
+(lib.CachedTexturedBitmap_8 = function() {
 	this.initialize(ss["Streetsdrop74_atlas_"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
@@ -266,7 +266,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(12).call(this.frame_12).wait(30).call(this.frame_42).wait(1));
 	// mpic
-	this.instance = new lib.CachedTexturedBitmap_18();
+	this.instance = new lib.CachedTexturedBitmap_8();
 	this.instance.parent = this;
 	this.instance.setTransform(0,0,0.5,0.5);
 	this.instance_1 = new lib.CachedTexturedBitmap_9();
@@ -549,7 +549,7 @@ lib.properties = {
 	color: "#EFF5ED",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Streetsdrop74_atlas_.png?1684143143017", id:"Streetsdrop74_atlas_"}
+		{src:"images/Streetsdrop74_atlas_.png?1684545365377", id:"Streetsdrop74_atlas_"}
 	],
 	preloads: []
 };
@@ -692,6 +692,9 @@ function handleComplete(evt,comp) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
+	var preloaderDiv = document.getElementById("_preload_div_");
+	preloaderDiv.style.display = 'none';
+	canvas.style.display = 'block';
 	exportRoot = new lib.Streetsdrop74();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
@@ -702,7 +705,7 @@ function handleComplete(evt,comp) {
 		createjs.Ticker.addEventListener("tick", stage);
 	}	    
 	//Code to support hidpi screens and responsive scaling.
-	AdobeAn.makeResponsive(true,'both',true,1,[canvas,anim_container,dom_overlay_container]);	
+	AdobeAn.makeResponsive(true,'both',false,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
@@ -711,9 +714,10 @@ function handleComplete(evt,comp) {
 </head>
 <body onload="init();" style="margin:0px;">
 	<div id="animation_container" style="background-color:rgba(239, 245, 237, 1.00); width:1100px; height:620px">
-		<canvas id="canvas" width="1100" height="620" style="position: absolute; display: block; background-color:rgba(239, 245, 237, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1100px; height:620px; position: absolute; left: 0px; top: 0px; display: block;">
+		<canvas id="canvas" width="1100" height="620" style="position: absolute; display: none; background-color:rgba(239, 245, 237, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1100px; height:620px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:620px; width: 1100px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1684545365393 style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>
