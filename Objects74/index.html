@@ -16,9 +16,6 @@
 <link rel="shortcut icon" href="#">
 <!-- write your code here -->
 <style>
-	body {
-	background-color: #000000;
-	}
   #animation_container {
 	position:absolute;
 	margin:auto;
@@ -26,6 +23,9 @@
 	top:0;bottom:0;
 	-webkit-tap-highlight-color: transparent;
   }
+  body {
+	background-color: #000000;
+	}
 </style>
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="ChelyabinskObjects.js"></script>
@@ -47,9 +47,7 @@ rav = 0;
 function AddPicture() {
 	var p = new createjs.Bitmap('pics/image' + n + '.jpg');
 	root.qpics.addChild(p);
-	exportRoot.gotoAndStop(exportRoot.currentFrame + 1);
-    root.pbar.gotoAndStop(Number(n-1));
-    if (n!=20) {
+	if (n!=20) {
 	picobj.children[0].image.src = 'pics/image' + n + 'obj.png';
 	}
     switch (n) {
@@ -86,15 +84,24 @@ function AddPicture() {
 	picobj.children[0].image.src = 'pics/image23obj.jpg';
 	break;
 }
+ 
  pause = false;
  sv = false;
  tn = 0; 
- let o = 1;
+ 
+}
+
+function ShowQuestion() {
+	root.qpics.visible = true;
+	root.pbar.gotoAndStop(Number(n-1));	
+	exportRoot.gotoAndStop(exportRoot.currentFrame + 1);	
+	let o = 1;
 	while (o<4) {		
 		obm[o].visible=true;
 		o++;
-	}	
-}</script>
+	}
+}
+</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -123,8 +130,7 @@ function handleComplete(evt,comp) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
 	exportRoot = new lib.ChelyabinskObjects();
-	stage = new lib.Stage(canvas);
-	stage.enableMouseOver();	
+	stage = new lib.Stage(canvas);	
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);
