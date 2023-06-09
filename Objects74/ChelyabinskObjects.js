@@ -5,7 +5,7 @@ var lib={};var ss={};var img={};
 lib.ssMetadata = [
 		{name:"ChelyabinskObjects_atlas_", frames: [[0,0,1606,1206]]},
 		{name:"ChelyabinskObjects_atlas_2", frames: [[0,0,1600,1200]]},
-		{name:"ChelyabinskObjects_atlas_3", frames: [[0,1592,1670,80],[1735,1091,178,82],[1026,1097,707,99],[1026,996,707,99],[1026,1198,707,99],[1818,231,172,174],[1977,77,50,60],[1977,139,25,41],[1977,0,58,75],[0,1674,1200,48],[1915,1007,96,46],[1915,1055,125,13],[1818,0,157,229],[0,1724,1192,40],[0,0,1188,868],[1818,707,186,148],[1190,0,626,873],[1394,1299,366,147],[1818,407,186,148],[1818,557,186,148],[1818,857,186,148],[1026,875,721,119],[1672,1448,366,147],[1026,1299,366,147],[1672,1597,366,147],[1735,1007,178,82],[1735,1175,205,64],[1026,1448,350,49],[0,870,1024,720]]}
+		{name:"ChelyabinskObjects_atlas_3", frames: [[0,1592,1670,80],[1309,1097,707,99],[1309,996,707,99],[1309,1198,707,99],[1818,0,222,225],[1314,1674,88,106],[1585,1448,44,74],[1934,1299,103,133],[1762,1299,170,81],[1818,827,224,24],[1026,875,281,410],[0,1724,1192,40],[0,1674,1200,48],[0,0,1188,868],[1818,227,186,148],[1190,0,626,873],[1394,1299,366,147],[1818,377,186,148],[1818,527,186,148],[1818,677,186,148],[1309,875,721,119],[1672,1597,366,147],[1026,1299,366,147],[1672,1448,366,147],[1378,1448,205,64],[1202,1674,110,110],[1026,1448,350,49],[0,870,1024,720]]}
 ];
 
 
@@ -20,107 +20,100 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedTexturedBitmap_10 = function() {
+(lib.CachedTexturedBitmap_103 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_103 = function() {
+(lib.CachedTexturedBitmap_104 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_104 = function() {
+(lib.CachedTexturedBitmap_105 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_105 = function() {
+(lib.CachedTexturedBitmap_106 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_106 = function() {
+(lib.CachedTexturedBitmap_107 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_107 = function() {
+(lib.CachedTexturedBitmap_108 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_108 = function() {
+(lib.CachedTexturedBitmap_109 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_109 = function() {
+(lib.CachedTexturedBitmap_110 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_11 = function() {
+(lib.CachedTexturedBitmap_111 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_110 = function() {
+(lib.CachedTexturedBitmap_112 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_111 = function() {
+(lib.CachedTexturedBitmap_114 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_112 = function() {
+(lib.CachedTexturedBitmap_116 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_12 = function() {
+(lib.CachedTexturedBitmap_13 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_13 = function() {
-	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
-	this.gotoAndStop(14);
-}).prototype = p = new cjs.Sprite();
-
-
-
 (lib.CachedTexturedBitmap_14 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
-	this.gotoAndStop(15);
+	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -134,7 +127,7 @@ lib.ssMetadata = [
 
 (lib.CachedTexturedBitmap_3 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
-	this.gotoAndStop(16);
+	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -148,84 +141,84 @@ lib.ssMetadata = [
 
 (lib.CachedTexturedBitmap_5 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
-	this.gotoAndStop(17);
+	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedTexturedBitmap_55 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
-	this.gotoAndStop(18);
+	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedTexturedBitmap_57 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
-	this.gotoAndStop(19);
+	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedTexturedBitmap_58 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
-	this.gotoAndStop(20);
+	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedTexturedBitmap_59 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
-	this.gotoAndStop(21);
+	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedTexturedBitmap_6 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
-	this.gotoAndStop(22);
+	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedTexturedBitmap_7 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
-	this.gotoAndStop(23);
+	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedTexturedBitmap_8 = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
-	this.gotoAndStop(24);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.CachedTexturedBitmap_9 = function() {
-	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
-	this.gotoAndStop(25);
+	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.gerb01animals = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
-	this.gotoAndStop(26);
+	this.gotoAndStop(24);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.nextbutton = function() {
+	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
+	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.PLoadbackgr = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
-	this.gotoAndStop(27);
+	this.gotoAndStop(26);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.zast = function() {
 	this.initialize(ss["ChelyabinskObjects_atlas_3"]);
-	this.gotoAndStop(28);
+	this.gotoAndStop(27);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -270,11 +263,11 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	// Слой_1
 	this.instance = new lib.CachedTexturedBitmap_106();
 	this.instance.parent = this;
-	this.instance.setTransform(0,0,1.0593,1.0593);
+	this.instance.setTransform(-0.8,-0.8,0.8274,0.8274);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.PLoadGear, new cjs.Rectangle(0,0,182.2,184.4), null);
+}).prototype = getMCSymbolPrototype(lib.PLoadGear, new cjs.Rectangle(-0.8,-0.8,183.70000000000002,186.20000000000002), null);
 
 
 (lib.PLoad = function(mode,startPosition,loop) {
@@ -381,33 +374,33 @@ p.nominalBounds = new cjs.Rectangle(-48,-24,430,77.8);
 		
 		this.alpha = 0;
 	}
-	this.frame_1 = function() {
-		//this.children[0].image.src = 'pics/image2obj.jpg';
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.PicObj, new cjs.Rectangle(0,0,0,0), null);
+
+
+(lib.NextB = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_0 = function() {
+		this.stop();
+		this.cursor = "pointer";
+		this.buttonMode = true;
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(22));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,0,0);
-
-
-(lib.NextQBtn = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// Слой_1
-	this.instance = new lib.CachedTexturedBitmap_9();
+	// nbback
+	this.instance = new lib.nextbutton();
 	this.instance.parent = this;
-	this.instance.setTransform(-0.75,-0.75,0.7557,0.7557);
 
-	this.instance_1 = new lib.CachedTexturedBitmap_10();
-	this.instance_1.parent = this;
-	this.instance_1.setTransform(-0.75,-0.75,0.7557,0.7557);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).wait(1));
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-0.7,-0.7,134.5,61.900000000000006);
+}).prototype = getMCSymbolPrototype(lib.NextB, new cjs.Rectangle(0,0,110,110), null);
 
 
 (lib.Backgrnd = function(mode,startPosition,loop) {
@@ -468,18 +461,13 @@ p.nominalBounds = new cjs.Rectangle(-0.7,-0.7,134.5,61.900000000000006);
 			FadeComplete();
 		}
 			if (pause) return;
-			requestAnimationFrame(loop, obj);
-			/*exportRoot.nextb.visible = true;
-			if (n!=20) {
-			obj.alpha = 1;
-			}else{
-				obj.alpha = 0;
-			}*/
+			requestAnimationFrame(loop, obj);	
 		}
 		
 		function FadeComplete() {
 			pause = true;
 			exportRoot.nextb.visible = true;
+			root.qtf.text = " ";
 			if (n==23) {		
 				root.pload3.visible = true;
 				root.pload3.gotoAndPlay(1);
@@ -562,54 +550,54 @@ p.nominalBounds = new cjs.Rectangle(-1.7,-1.7,183,73.5);
 	// book
 	this.instance_1 = new lib.CachedTexturedBitmap_107();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(78.45,186.85,1.4809,1.4809);
+	this.instance_1.setTransform(79.1,187.55,0.8274,0.8274);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(24));
 
 	// hook
 	this.instance_2 = new lib.CachedTexturedBitmap_108();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(97.05,95.8,1.4809,1.4809);
+	this.instance_2.setTransform(97.05,95.85,0.8274,0.8274);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(24));
 
 	// k
 	this.instance_3 = new lib.CachedTexturedBitmap_109();
 	this.instance_3.parent = this;
-	this.instance_3.setTransform(74.45,113.5,1.4809,1.4809);
+	this.instance_3.setTransform(75.1,114.15,0.8274,0.8274);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(24));
 
 	// liquid_metal
 	this.instance_4 = new lib.CachedTexturedBitmap_110();
 	this.instance_4.parent = this;
-	this.instance_4.setTransform(47.8,47.6,1.4809,1.4809);
+	this.instance_4.setTransform(48.5,48.25,0.8274,0.8274);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(24));
 
 	// gear
 	this.instance_5 = new lib.PLoadGear();
 	this.instance_5.parent = this;
-	this.instance_5.setTransform(115.1,165.15,1,1,0,0,0,91.1,92.4);
+	this.instance_5.setTransform(115.05,165.1,1,1,0,0,0,91.1,92.4);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).to({regX:91.2,regY:92.2,scaleX:0.9999,scaleY:0.9999,rotation:80.0242,x:115.25,y:165.05},23).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).to({regX:91.2,regY:92.2,scaleX:0.9999,scaleY:0.9999,rotation:80.0242,x:115.15},23).wait(1));
 
 	// text
 	this.instance_6 = new lib.CachedTexturedBitmap_111();
 	this.instance_6.parent = this;
-	this.instance_6.setTransform(24.85,12.2,1.4809,1.4809);
+	this.instance_6.setTransform(24.9,12.2,0.8274,0.8274);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(24));
 
 	// back
 	this.instance_7 = new lib.CachedTexturedBitmap_112();
 	this.instance_7.parent = this;
-	this.instance_7.setTransform(0.5,0,1.4809,1.4809);
+	this.instance_7.setTransform(0.5,0,0.8274,0.8274);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(24));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-14.1,0,258.8,339.2);
+p.nominalBounds = new cjs.Rectangle(-15.4,0,261,339.3);
 
 
 (lib.PLoadThree = function(mode,startPosition,loop) {
@@ -640,12 +628,12 @@ p.nominalBounds = new cjs.Rectangle(-14.1,0,258.8,339.2);
 	this.instance.parent = this;
 	this.instance.setTransform(43.2,43.8,0.472,0.4714,-179.7904,0,0,91,92.2);
 	this.instance.filters = [new cjs.ColorFilter(0, 0, 0, 1, 204, 201, 167, 0)];
-	this.instance.cache(-2,-2,186,188);
+	this.instance.cache(-3,-3,188,190);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:90.9,rotation:-43.7658,y:43.85},41).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-17.9,-17.3,122.30000000000001,122.2);
+p.nominalBounds = new cjs.Rectangle(-18.4,-17.8,123.4,123.3);
 
 
 (lib.Pbar = function(mode,startPosition,loop) {
@@ -660,7 +648,7 @@ p.nominalBounds = new cjs.Rectangle(-17.9,-17.3,122.30000000000001,122.2);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(24));
 
 	// pbar
-	this.instance = new lib.CachedTexturedBitmap_11();
+	this.instance = new lib.CachedTexturedBitmap_116();
 	this.instance.parent = this;
 	this.instance.setTransform(-2,-2,0.5,0.5);
 
@@ -674,7 +662,7 @@ p.nominalBounds = new cjs.Rectangle(-17.9,-17.3,122.30000000000001,122.2);
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({regX:-0.1,scaleX:22.8481,x:-0.3},23).wait(1));
 
 	// backgr
-	this.instance_2 = new lib.CachedTexturedBitmap_12();
+	this.instance_2 = new lib.CachedTexturedBitmap_114();
 	this.instance_2.parent = this;
 	this.instance_2.setTransform(0,0,0.5,0.5);
 
@@ -723,8 +711,7 @@ p.nominalBounds = new cjs.Rectangle(-2,-2,600,24);
 		n = 1;
 		
 		root.nextb.on('click', function (e){   
-			n++;
-			root.qtf.text = " ";
+			n++;	
 			picobj.alpha = 0;	
 			root.qpics.removeAllChildren(); 
 			root.nextb.visible = false;
@@ -743,11 +730,11 @@ p.nominalBounds = new cjs.Rectangle(-2,-2,600,24);
 		picobj.x = 9;
 		picobj.y = 111;
 		
-		root.qtf.text = "Какому объекту принадлежит эта деталь?";
+		root.qtf.text = "Угадайте достопримечательность";
 		
-		obm[1].dt.text = "Телебашне";
-		obm[2].dt.text = "Ленинградскому мосту";
-		obm[3].dt.text = "Памятнику Курчатову";
+		obm[1].dt.text = "Телебашня";
+		obm[2].dt.text = "Ленинградский мост";
+		obm[3].dt.text = "Памятник Курчатову";
 		
 		obm[1].dt.y +=6;
 		obm[2].dt.y +=8;
@@ -909,7 +896,7 @@ p.nominalBounds = new cjs.Rectangle(-2,-2,600,24);
 		obm[2].dt.text = "Музыкальный зал \"Родина\"";
 		obm[3].dt.text = "Кинотеатр \"Спартак\"";
 		
-		obm[2].dt.y += 9;
+		obm[2].dt.y += 5;
 		obm[2].dt.y -= 10;
 		
 		ra = 2;
@@ -935,6 +922,8 @@ p.nominalBounds = new cjs.Rectangle(-2,-2,600,24);
 		obm[1].dt.text = "Золотая рыбка";
 		obm[2].dt.text = "Леший";
 		obm[3].dt.text = "Русалка";
+		
+		obm[2].dt.y += 5;
 		
 		ra = 1;
 	}
@@ -1106,20 +1095,19 @@ p.nominalBounds = new cjs.Rectangle(-2,-2,600,24);
 	this.pload = new lib.PLoadTwo();
 	this.pload.name = "pload";
 	this.pload.parent = this;
-	this.pload.setTransform(427,376,0.3376,0.3376,0,0,0,116.7,169.6);
+	this.pload.setTransform(415.1,409.75,0.6043,0.6043,0,0,0,116.9,169.6);
 
 	this.instance_3 = new lib.gerb01animals();
 	this.instance_3.parent = this;
 	this.instance_3.setTransform(182,233,3.4493,3.4493);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.pload}]},1).to({state:[{t:this.instance_3}]},23).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.pload}]}).to({state:[{t:this.instance_3}]},24).wait(1));
 
 	// Qpics
-	this.nextb = new lib.NextQBtn();
+	this.nextb = new lib.NextB();
 	this.nextb.name = "nextb";
 	this.nextb.parent = this;
-	this.nextb.setTransform(872,613.55,0.6617,0.5674);
-	new cjs.ButtonHelper(this.nextb, 0, 1, 1);
+	this.nextb.setTransform(911.3,611.2,0.7455,0.7455,0,0,0,55,55);
 
 	this.qpics = new lib.Qpics();
 	this.qpics.name = "qpics";
@@ -1162,9 +1150,9 @@ lib.properties = {
 	color: "#000000",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/ChelyabinskObjects_atlas_.png", id:"ChelyabinskObjects_atlas_"},
-		{src:"images/ChelyabinskObjects_atlas_2.png", id:"ChelyabinskObjects_atlas_2"},
-		{src:"images/ChelyabinskObjects_atlas_3.png", id:"ChelyabinskObjects_atlas_3"}
+		{src:"pics/ChelyabinskObjects_atlas_.png", id:"ChelyabinskObjects_atlas_"},
+		{src:"pics/ChelyabinskObjects_atlas_2.png", id:"ChelyabinskObjects_atlas_2"},
+		{src:"pics/ChelyabinskObjects_atlas_3.png", id:"ChelyabinskObjects_atlas_3"}
 	],
 	preloads: []
 };
