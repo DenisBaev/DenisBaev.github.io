@@ -1059,17 +1059,17 @@ p.nominalBounds = new cjs.Rectangle(-2,-2,600,24);
 	this.abtn3 = new lib.AnswBtn();
 	this.abtn3.name = "abtn3";
 	this.abtn3.parent = this;
-	this.abtn3.setTransform(817.6,411.25);
+	this.abtn3.setTransform(828.6,411.25);
 
 	this.abtn2 = new lib.AnswBtn();
 	this.abtn2.name = "abtn2";
 	this.abtn2.parent = this;
-	this.abtn2.setTransform(817.6,307.25);
+	this.abtn2.setTransform(828.6,307.25);
 
 	this.abtn1 = new lib.AnswBtn();
 	this.abtn1.name = "abtn1";
 	this.abtn1.parent = this;
-	this.abtn1.setTransform(817.6,202.25);
+	this.abtn1.setTransform(828.6,202.25);
 
 	this.wac = new cjs.Text("0", "40px 'Arial'", "#FFFFFF");
 	this.wac.name = "wac";
@@ -1116,7 +1116,7 @@ p.nominalBounds = new cjs.Rectangle(-2,-2,600,24);
 	this.nextb = new lib.NextB();
 	this.nextb.name = "nextb";
 	this.nextb.parent = this;
-	this.nextb.setTransform(911.3,611.2,0.7455,0.7455,0,0,0,55,55);
+	this.nextb.setTransform(922.3,611.2,0.7455,0.7455,0,0,0,55,55);
 
 	this.qpics = new lib.Qpics();
 	this.qpics.name = "qpics";
