@@ -48,3 +48,19 @@ changeTextInFields = function(a, b) {
             changeTextInFields("Печеньку съели :-(","");
         }
         }
+//Sound
+selectletter = './sound/selectletter.mp3';
+openletter = './sound/openletter.mp3';
+win = './sound/win.mp3';
+eaten = './sound/eaten.mp3';
+mousesteps = [];
+for (m = 2; m<7; m++)
+{
+    mousesteps.push('./sound/mouse_step' + '0' + String(m) + '.mp3');
+}
+
+function playsound(src){
+    var audio = new Audio(src);
+    audio.play();
+    audio.onended = function(){this.remove()};
+ }
