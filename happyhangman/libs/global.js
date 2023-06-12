@@ -49,7 +49,7 @@ changeTextInFields = function(a, b) {
         }
         }
 //Sound
-selectletter = './sound/selectletter.mp3';
+selectletter = './sound/selectletter.wav';
 openletter = './sound/openletter.mp3';
 win = './sound/win.mp3';
 eaten = './sound/eaten.mp3';
