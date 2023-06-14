@@ -576,7 +576,7 @@ p.nominalBounds = new cjs.Rectangle(-2.7,-0.1,54,54);
 	}
 	this.frame_1 = function() {
 		this.stop();
-		
+		playsound(intro);
 		this.continue_btn.visible=false;
 		
 		this.continue_btn.on('click', function (e){
