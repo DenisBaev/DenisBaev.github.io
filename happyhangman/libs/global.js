@@ -49,6 +49,7 @@ changeTextInFields = function(a, b) {
         }
         }
 //Sound
+intro = './sound/intro.mp3';
 selectletter = './sound/selectletter.mp3';
 openletter = './sound/openletter.mp3';
 win = './sound/win.mp3';
