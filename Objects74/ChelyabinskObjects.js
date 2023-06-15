@@ -973,6 +973,7 @@ p.nominalBounds = new cjs.Rectangle(-2,-2,600,24);
 		obm[3].dt.text = "Подводная лодка";
 		
 		obm[1].dt.y -=10;
+		obm[2].dt.y -=3;
 		
 		ra = 2;
 	}
@@ -989,7 +990,7 @@ p.nominalBounds = new cjs.Rectangle(-2,-2,600,24);
 		obm[3].dt.text = "3-ий основатель";
 		
 		obm[1].dt.y +=10;
-		obm[2].dt.y -=16;
+		obm[2].dt.y -=13;
 		
 		ra = 2;
 	}
