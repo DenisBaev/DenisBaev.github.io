@@ -435,9 +435,8 @@ p.nominalBounds = new cjs.Rectangle(-0.4,-0.4,116.60000000000001,26.5);
 		
 		if ((attempts!=0) && (pb==false)){
 			
-		//selectletter.play();		
-
-		playsound(selectletter);	
+		const sndclick = new Audio('./sound/selectletter.ogg');
+		sndclick.play();
 			
 		t = 0;
 		z = 0;
