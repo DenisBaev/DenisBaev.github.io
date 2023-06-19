@@ -831,7 +831,7 @@ p.nominalBounds = new cjs.Rectangle(-2,-2,600,24);
 		
 		root.qtf.text = "Что отсутствует на фото?";
 		
-		obm[1].dt.text = "Ракета \"Заря\"";
+		obm[1].dt.text = "Ракета";
 		obm[2].dt.text = "Самолёт МИГ-17";
 		obm[3].dt.text = "Орёл";
 		
