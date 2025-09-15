@@ -6,6 +6,11 @@
 <br>
 ### Примеры готовых работ (HTML5 + JS):
 <br>
+<h2><a href="https://denisbaev.github.io/Sqfood">Покорми белочку</a></h2> 
+Чем можно и нельзя кормить белок.
+
+___
+
 <h2><a href="https://denisbaev.github.io/Objects74">Культурные объекты Челябинска</a></h2> 
 Викторина по достопримечательностям Челябинска.
 
@@ -23,3 +28,4 @@ ___
 
 <h2><a href="https://denisbaev.github.io/happyhangman">Happy New Hangman</a></h2>
 Увлекательная новогодняя игра по правилам знаменитой "Виселицы".
+
