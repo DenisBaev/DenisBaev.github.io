@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"sqfood_atlas_", frames: [[1202,688,240,186],[1432,1046,192,89],[242,990,240,186],[484,990,240,186],[968,876,240,186],[1686,670,240,186],[484,802,240,186],[1210,876,220,80],[1210,958,220,80],[726,990,220,80],[1210,1040,220,80],[1202,312,240,186],[0,990,240,186],[726,802,240,186],[1868,157,109,173],[1444,858,240,186],[1444,482,240,186],[242,802,240,186],[1686,858,240,186],[1826,0,200,155],[1686,482,240,186],[1202,500,240,186],[1444,670,240,186],[1524,0,300,294],[0,802,240,186],[1202,0,320,310],[0,0,1200,800],[1524,296,342,184]]}
+		{name:"sqfood_atlas_", frames: [[1202,312,240,186],[1432,1046,192,89],[1444,482,240,186],[1686,482,240,186],[726,802,240,186],[1686,670,240,186],[0,990,240,186],[1210,876,220,80],[1210,958,220,80],[726,990,220,80],[1210,1040,220,80],[1444,858,240,186],[484,990,240,186],[1686,858,240,186],[1868,157,109,173],[1444,670,240,186],[484,802,240,186],[0,802,240,186],[1202,500,240,186],[1826,0,200,155],[968,876,240,186],[242,802,240,186],[242,990,240,186],[1524,0,300,294],[1202,688,240,186],[1202,0,320,310],[0,0,1200,800],[1524,296,342,184]]}
 ];
 
 
@@ -489,7 +489,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,300,294);
 			}
 			
 		this.on('click', function (e){
-		if (this.butbckgrnd.currentFrame == 0) {
+		if ((this.butbckgrnd.currentFrame == 0) && (sp==0)) {
+			sp=1;
+			this.cursor = 'default';
+			createjs.Sound.volume = 0.9;
+			audioCtx = new AudioContext();
+			audioCtx.resume().then(function() {createjs.Sound.play("click")});
 			n=foodlist.indexOf(this.dt.text);
 			this.alpha = .8;
 			this.butbckgrnd.gotoAndStop(1);
@@ -501,7 +506,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,300,294);
 		    function handleComplete() {
 				exportRoot.points.y = 550;
 		        if (n <= 10) {
-			foodroot[n].butbckgrnd.gotoAndStop(2);
+				createjs.Sound.volume = 0.5;
+				createjs.Sound.play("right");		
+				foodroot[n].butbckgrnd.gotoAndStop(2);
 				ra++;
 				s++;
 				exportRoot.points.alpha = 1;
@@ -509,6 +516,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,300,294);
 				exportRoot.points.pdt.text = '+1';
 				animPoints();
 		}else{
+			createjs.Sound.volume = 0.4;
+			createjs.Sound.play("wrong");
 			foodroot[n].butbckgrnd.gotoAndStop(3);
 		    wa++;	
 			s--;
@@ -519,7 +528,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,300,294);
 		}
 		    };   	
 		}else{
-			null;
+		console.log('выбор ужо сделан');	
+			return;
 		}
 		});
 	}
@@ -558,6 +568,21 @@ p.nominalBounds = new cjs.Rectangle(0,0,300,294);
 		root = this;
 		
 		foodroot = [0, root.food01, root.food02, root.food03, root.food04, root.food05, root.food06, root.food07, root.food08, root.food09, root.food10, root.food11, root.food12, root.food13, root.food14, root.food15, root.food16, root.food17, root.food18, root.food19, root.food20];
+		
+		//Sound
+		sounds = {path:"./sound/",
+		            manifest: [
+					{id: "click", src: { mp3:"click.mp3"}},
+					{id: "right", src: { mp3:"right.mp3"}},
+					{id: "wrong", src: { mp3:"wrong.mp3"}},
+					{id: "win", src: { mp3:"win.mp3"}},
+					{id: "badresult", src: { mp3:"badresult.mp3"}}
+					
+		    ]};
+		
+		createjs.Sound.registerPlugins([createjs.WebAudioPlugin, createjs.FlashAudioPlugin]);
+		createjs.Sound.alternateExtensions = ["mp3"];
+		createjs.Sound.registerSounds(sounds);
 	}
 
 	// actions tween:
@@ -735,7 +760,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/sqfood_atlas_.png", id:"sqfood_atlas_"}
+		{src:"images/sqfood_atlas_.png?1757995509738", id:"sqfood_atlas_"}
 	],
 	preloads: []
 };
