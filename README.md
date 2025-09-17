@@ -33,7 +33,9 @@ ___
 
 
 
-<a>mailto:d_prog@mail.ru</a>
+
+<a href="mailto:d_prog@mail.ru">Send Email</a>
+
 
 
 
