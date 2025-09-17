@@ -31,4 +31,5 @@ ___
 
 ==============
 
-e-mail: <a>mailto: d_prog@mail.ru</a>
+e-mail: <a>d_prog@mail.ru</a>
+
