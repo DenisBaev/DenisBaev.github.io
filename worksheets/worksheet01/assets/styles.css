@@ -1,0 +1,23 @@
+#animation_container {
+    -webkit-tap-highlight-color: transparent;
+  }
+#body {
+    -webkit-tap-highlight-color: transparent;
+  }
+#canvas {
+    -webkit-tap-highlight-color: transparent;
+  }
+#dom_overlay_container {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+#answer_box {
+    font-family: 'Segoe Script', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: blue;
+
+    border-radius: 5px;
+    border: 3px solid #000;
+    caret-color: black;
+}
