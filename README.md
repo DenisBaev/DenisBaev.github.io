@@ -35,12 +35,10 @@ ___
 <h2><a href="https://denisbaev.github.io/happyhangman">Happy New Hangman</a></h2>
 Увлекательная новогодняя игра по правилам знаменитой "Виселицы".
 
----
-
-
 <br>
 
 <a href="mailto:d_prog@mail.ru">Send Email</a>
+
 
 
 
