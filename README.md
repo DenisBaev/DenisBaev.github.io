@@ -1,7 +1,7 @@
 <h1>Добро пожаловать!</h1> 
 
 <br>
- <h2><b>Здесь представлены примеры готовых работ (HTML5 + JS):</h2></b> 
+ <h2><b>Здесь представлены примеры готовых работ (HTML5 + JS):</b></h2>
 <br>
 <br>
 <h2><a href="https://denisbaev.github.io/worksheets/worksheet01">Рабочий лист по истории</a></h2> 
@@ -49,6 +49,7 @@ ___
 <br>
 
 <a href="mailto:d_prog@mail.ru">Send Email</a>
+
 
 
 
