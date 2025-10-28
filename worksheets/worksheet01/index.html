@@ -1,12 +1,4 @@
 <!DOCTYPE html>
-<!--
-	NOTES:
-	1. All tokens are represented by '$' sign in the template.
-	2. You can write your code only wherever mentioned.
-	3. All occurrences of existing tokens will be replaced by their appropriate values.
-	4. Blank lines will be removed automatically.
-	5. Remove unnecessary comments before creating your template.
--->
 <html>
 <head>
 <meta charset="UTF-8">
@@ -14,7 +6,7 @@
 <meta name = "description" content = "Школьный рабочий лист для начальных классов, по теме Великая Отечественная Война">
 <title>Рабочий лист по теме "Великая Отечественная Война"</title>
 <link rel="shortcut icon" href="#">
-<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="../../libs/createjs.min.js"></script>
 <script src="worksheet.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
@@ -57,8 +49,6 @@ function handleComplete(evt,comp) {
 	fnStartAnimation();
 }
 </script>
-
-<!-- write your code here -->
 </head>
 <body id="body" tabindex="2" onload="init();" style="margin:0px;">
 	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:820px; height:1161px">
@@ -67,4 +57,5 @@ function handleComplete(evt,comp) {
 		</div>
 	</div>
 </body>
+
 </html>
