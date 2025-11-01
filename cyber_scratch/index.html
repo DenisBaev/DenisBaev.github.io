@@ -66,7 +66,7 @@ if ((e.offsetX >= scoordX[i] && e.offsetY >= scoordY[i] && e.offsetX <= scoordX[
     ctx.arc(x, y, 4, 0, 2 * Math.PI);
     ctx.fill();
 
-    ctx.lineWidth = 7;
+    ctx.lineWidth = 6;
     ctx.beginPath();
     ctx.moveTo(old.x, old.y);
     ctx.lineTo(x, y);
@@ -79,6 +79,48 @@ canvas.addEventListener('mouseup', function (e){
   isPress = false;
 });
 
+// Touch event handlers
+canvas.addEventListener('touchstart', function (e){
+e.preventDefault();
+isPress = true;
+old = {x: touch.pageX - canvas.offsetLeft, y: touch.pageY - canvas.offsetTop};
+const touch = e.touches[0];
+})
+
+canvas.addEventListener('touchmove', function (e){
+e.preventDefault();
+const touch = e.touches[0];
+for (i=0; i<16; i++) {
+if ((e.offsetX >= scoordX[i] && e.offsetY >= scoordY[i] && e.offsetX <= scoordX[i] + swidth[i] && e.offsetY <= scoordY[i] + sheight))   {
+  	canvas.style.cursor = `url(${imageUrl}), pointer`;
+    break;
+  } else {
+  	canvas.style.cursor = "default";}
+}    
+
+ if (isPress) {	
+    var x = touch.pageX - canvas.offsetLeft;
+    var y = touch.pageY - canvas.offsetTop;
+    ctx.globalCompositeOperation = 'destination-out';
+
+    ctx.beginPath();
+    ctx.arc(x, y, 4, 0, 2 * Math.PI);
+    ctx.fill();
+
+    ctx.lineWidth = 6;
+    ctx.beginPath();
+    ctx.moveTo(old.x, old.y);
+    ctx.lineTo(x, y);
+    ctx.stroke();
+    old = {x: x, y: y};
+
+  }
+
+})
+
+canvas.addEventListener('touchend', () => isPress = false);
+canvas.addEventListener('touchcancel', () => isPress = false);
+
 }
 </script> 
 <!-- write your code here -->
@@ -88,5 +130,4 @@ canvas.addEventListener('mouseup', function (e){
     <canvas id="canvas" width="900" height="950"></canvas>
 </div>
 </body>
-
 </html>
