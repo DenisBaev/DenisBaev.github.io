@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Основные правила кибербезопасности</title>
+<style>
+.box {
+  display: inline-block;
+  background: url("pic/cybersecure.jpg");
+  background-size: cover;
+}
+
+canvas {
+  background: transparent;
+}    
+</style>
+<script>
+function init() {
+
+var url = 'pic/cybersec_scratches.png';
+var imageUrl = 'pic/cur19.png'; //user cursor
+
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+
+var img = new Image();
+img.src = url;
+img.onload = function () {
+  var width = Math.min(900, img.width);
+  var height = img.height * (width / img.width);
+  canvas.width = width;
+  canvas.height = height;
+  ctx.drawImage(img, 0, 0, width, height);
+};
+
+var isPress = false;
+var old = null;
+
+//scratch layers coordinates
+var scoordX = [379, 529, 127, 476, 677, 192, 159, 188, 653, 457, 442, 278, 746, 70, 217, 285],
+scoordY = [108, 107, 165, 166, 252, 280, 339, 397, 427, 484, 543, 629, 687, 745, 804, 861],
+swidth = [70, 57, 65, 154, 45, 46, 73, 89, 60, 51, 69, 53, 34, 93, 55, 46],
+sheight = 25;
+
+canvas.addEventListener('mousedown', function (e){
+  isPress = true;
+  old = {x: e.offsetX, y: e.offsetY};
+});
+canvas.addEventListener('mousemove', function (e){
+
+//change cursor over scratch layers  
+for (i=0; i<16; i++) {
+if ((e.offsetX >= scoordX[i] && e.offsetY >= scoordY[i] && e.offsetX <= scoordX[i] + swidth[i] && e.offsetY <= scoordY[i] + sheight))   {
+  	canvas.style.cursor = `url(${imageUrl}), pointer`;
+    break;
+  } else {
+  	canvas.style.cursor = "default";}
+}    
+
+ if (isPress) {	
+    var x = e.offsetX;
+    var y = e.offsetY;
+    ctx.globalCompositeOperation = 'destination-out';
+
+    ctx.beginPath();
+    ctx.arc(x, y, 5, 0, 2 * Math.PI);
+    ctx.fill();
+
+    ctx.lineWidth = 20;
+    ctx.beginPath();
+    ctx.moveTo(old.x, old.y);
+    ctx.lineTo(x, y);
+    ctx.stroke();
+    old = {x: x, y: y};
+
+  }
+});
+canvas.addEventListener('mouseup', function (e){
+  isPress = false;
+});
+
+}
+</script> 
+<!-- write your code here -->
+</head>
+<body onload="init();" style="margin:0px;">
+<div class="box">
+    <canvas id="canvas" width="900" height="950"></canvas>
+</div>
+</body>
+</html>
