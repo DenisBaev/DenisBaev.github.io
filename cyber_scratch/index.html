@@ -63,10 +63,10 @@ if ((e.offsetX >= scoordX[i] && e.offsetY >= scoordY[i] && e.offsetX <= scoordX[
     ctx.globalCompositeOperation = 'destination-out';
 
     ctx.beginPath();
-    ctx.arc(x, y, 5, 0, 2 * Math.PI);
+    ctx.arc(x, y, 4, 0, 2 * Math.PI);
     ctx.fill();
 
-    ctx.lineWidth = 20;
+    ctx.lineWidth = 7;
     ctx.beginPath();
     ctx.moveTo(old.x, old.y);
     ctx.lineTo(x, y);
@@ -88,4 +88,5 @@ canvas.addEventListener('mouseup', function (e){
     <canvas id="canvas" width="900" height="950"></canvas>
 </div>
 </body>
+
 </html>
