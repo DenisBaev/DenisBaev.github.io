@@ -80,10 +80,10 @@ canvas.addEventListener('mouseup', function (e){
 });
 
 // Touch event handlers
-canvas.addEventListener('touchstart', function (e){
+/*canvas.addEventListener('touchstart', function (e){
 e.preventDefault();
 isPress = true;
-old = {x: touch.pageX - canvas.offsetLeft, y: touch.pageY - canvas.offsetTop};
+old = {x: e.touch.pageX - canvas.offsetLeft, y: e.touch.pageY - canvas.offsetTop};
 const touch = e.touches[0];
 })
 
@@ -120,7 +120,7 @@ if ((e.offsetX >= scoordX[i] && e.offsetY >= scoordY[i] && e.offsetX <= scoordX[
 
 canvas.addEventListener('touchend', () => isPress = false);
 canvas.addEventListener('touchcancel', () => isPress = false);
-
+*/
 }
 </script> 
 <!-- write your code here -->
@@ -131,3 +131,4 @@ canvas.addEventListener('touchcancel', () => isPress = false);
 </div>
 </body>
 </html>
+
