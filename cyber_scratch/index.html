@@ -14,7 +14,6 @@ canvas {
   background: transparent;
 }    
 </style>
-<script src="../libs/createjs-2015.11.26.min.js"></script>
 <script>
 function init() {
 
@@ -44,7 +43,7 @@ swidth = [70, 57, 65, 154, 45, 46, 73, 89, 60, 51, 69, 53, 34, 93, 55, 46],
 sheight = 25;
 
 canvas.addEventListener('mousedown', function (e){
-   isPress = true;
+  isPress = true;
   old = {x: e.offsetX, y: e.offsetY};
 });
 canvas.addEventListener('mousemove', function (e){
@@ -81,27 +80,20 @@ canvas.addEventListener('mouseup', function (e){
 });
 
 // Touch event handlers
-/* canvas.addEventListener('touchstart', function (e){
+canvas.addEventListener('touchstart', function (e){
 e.preventDefault();
+var touch = e.touches[0];
 isPress = true;
-old = {x: e.offsetX, y: e.offsetY};
-const touch = e.touches[0];
+old = {x: touch.clientX - canvas.offsetLeft, y: touch.clientY - canvas.offsetTop};
+
 })
 
 canvas.addEventListener('touchmove', function (e){
+if (isPress) {	
 e.preventDefault();
-const touch = e.touches[0];
-for (i=0; i<16; i++) {
-if ((e.offsetX >= scoordX[i] && e.offsetY >= scoordY[i] && e.offsetX <= scoordX[i] + swidth[i] && e.offsetY <= scoordY[i] + sheight))   {
-  	canvas.style.cursor = `url(${imageUrl}), pointer`;
-    break;
-  } else {
-  	canvas.style.cursor = "default";}
-}    
-
- if (isPress) {	
-    var x = e.offsetX;
-    var y = e.offsetY;
+var touch = e.touches[0];
+var x = touch.clientX - old.x;
+var y = touch.clientY - old.y; 
     ctx.globalCompositeOperation = 'destination-out';
 
     ctx.beginPath();
@@ -114,13 +106,18 @@ if ((e.offsetX >= scoordX[i] && e.offsetY >= scoordY[i] && e.offsetX <= scoordX[
     ctx.lineTo(x, y);
     ctx.stroke();
     old = {x: x, y: y};
+  canvas.style.left = x + 'px';
+  canvas.style.top = y + 'px';
 
   }
 
 })
 
-canvas.addEventListener('touchend', () => isPress = false);
-canvas.addEventListener('touchcancel', () => isPress = false); */
+canvas.addEventListener('touchend', function(e) {
+        isPress = false;
+        canvas.removeEventListener('touchmove', canvas);
+        canvas.removeEventListener('touchend', arguments.callee);
+    });
 
 }
 </script> 
@@ -131,8 +128,4 @@ canvas.addEventListener('touchcancel', () => isPress = false); */
     <canvas id="canvas" width="900" height="950"></canvas>
 </div>
 </body>
-
 </html>
-
-
-
