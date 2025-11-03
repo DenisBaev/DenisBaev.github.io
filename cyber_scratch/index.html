@@ -23,11 +23,6 @@ var imageUrl = 'pic/curnail.png'; //user cursor
 
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
-var stage = new createjs.Stage("canvas");
-
-createjs.Touch.enable(stage, false, true);
-stage.preventSelection = false;
-stage.enableDOMEvents(true);
 
 var img = new Image();
 img.src = url;
@@ -138,5 +133,6 @@ canvas.addEventListener('touchcancel', () => isPress = false); */
 </body>
 
 </html>
+
 
 
