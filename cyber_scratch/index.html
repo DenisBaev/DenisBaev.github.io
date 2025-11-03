@@ -14,14 +14,16 @@ canvas {
   background: transparent;
 }    
 </style>
+<script src="../../lib/createjs-2015.11.26.min.js"></script>
 <script>
 function init() {
 
 var url = 'pic/cybersec_scratches.png';
-var imageUrl = 'pic/cur19.png'; //user cursor
+var imageUrl = 'pic/curnail.png'; //user cursor
 
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
+var stage = new createjs.Stage("canvas");
 
 var img = new Image();
 img.src = url;
@@ -43,6 +45,7 @@ swidth = [70, 57, 65, 154, 45, 46, 73, 89, 60, 51, 69, 53, 34, 93, 55, 46],
 sheight = 25;
 
 canvas.addEventListener('mousedown', function (e){
+  createjs.Touch.enable(stage);
   isPress = true;
   old = {x: e.offsetX, y: e.offsetY};
 });
@@ -76,14 +79,15 @@ if ((e.offsetX >= scoordX[i] && e.offsetY >= scoordY[i] && e.offsetX <= scoordX[
   }
 });
 canvas.addEventListener('mouseup', function (e){
+  createjs.Touch.disable(stage);
   isPress = false;
 });
 
 // Touch event handlers
-/*canvas.addEventListener('touchstart', function (e){
+/* canvas.addEventListener('touchstart', function (e){
 e.preventDefault();
 isPress = true;
-old = {x: e.touch.pageX - canvas.offsetLeft, y: e.touch.pageY - canvas.offsetTop};
+old = {x: e.offsetX, y: e.offsetY};
 const touch = e.touches[0];
 })
 
@@ -99,8 +103,8 @@ if ((e.offsetX >= scoordX[i] && e.offsetY >= scoordY[i] && e.offsetX <= scoordX[
 }    
 
  if (isPress) {	
-    var x = touch.pageX - canvas.offsetLeft;
-    var y = touch.pageY - canvas.offsetTop;
+    var x = e.offsetX;
+    var y = e.offsetY;
     ctx.globalCompositeOperation = 'destination-out';
 
     ctx.beginPath();
@@ -119,8 +123,8 @@ if ((e.offsetX >= scoordX[i] && e.offsetY >= scoordY[i] && e.offsetX <= scoordX[
 })
 
 canvas.addEventListener('touchend', () => isPress = false);
-canvas.addEventListener('touchcancel', () => isPress = false);
-*/
+canvas.addEventListener('touchcancel', () => isPress = false); */
+
 }
 </script> 
 <!-- write your code here -->
@@ -131,4 +135,3 @@ canvas.addEventListener('touchcancel', () => isPress = false);
 </div>
 </body>
 </html>
-
