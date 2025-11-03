@@ -25,6 +25,11 @@ var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 var stage = new createjs.Stage("canvas");
 
+createjs.Touch.enable(stage, false, true);
+stage.preventSelection = false;
+stage.enableDOMEvents(true);
+canvas.reset();
+
 var img = new Image();
 img.src = url;
 img.onload = function () {
@@ -45,8 +50,7 @@ swidth = [70, 57, 65, 154, 45, 46, 73, 89, 60, 51, 69, 53, 34, 93, 55, 46],
 sheight = 25;
 
 canvas.addEventListener('mousedown', function (e){
-  createjs.Touch.enable(stage);
-  isPress = true;
+   isPress = true;
   old = {x: e.offsetX, y: e.offsetY};
 });
 canvas.addEventListener('mousemove', function (e){
@@ -79,7 +83,6 @@ if ((e.offsetX >= scoordX[i] && e.offsetY >= scoordY[i] && e.offsetX <= scoordX[
   }
 });
 canvas.addEventListener('mouseup', function (e){
-  createjs.Touch.disable(stage);
   isPress = false;
 });
 
@@ -136,3 +139,4 @@ canvas.addEventListener('touchcancel', () => isPress = false); */
 </body>
 
 </html>
+
