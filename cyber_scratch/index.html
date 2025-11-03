@@ -28,7 +28,6 @@ var stage = new createjs.Stage("canvas");
 createjs.Touch.enable(stage, false, true);
 stage.preventSelection = false;
 stage.enableDOMEvents(true);
-canvas.reset();
 
 var img = new Image();
 img.src = url;
@@ -139,4 +138,5 @@ canvas.addEventListener('touchcancel', () => isPress = false); */
 </body>
 
 </html>
+
 
