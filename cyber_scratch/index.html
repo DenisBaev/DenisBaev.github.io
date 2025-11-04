@@ -3,151 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <title>Основные правила кибербезопасности</title>
-<style>
-.box {
-  display: inline-block;
-  background: url("pic/cybersecure.jpg");
-  background-size: cover;
-}
-
-canvas {
-  background: transparent;
-}    
-</style>
-<script>
-function init() {
-
-var url = 'pic/cybersec_scratches.png';
-var imageUrl = 'pic/curnail.png'; //user cursor
-
-var canvas = document.getElementById('canvas');
-var ctx = canvas.getContext('2d');
-
-var img = new Image();
-img.src = url;
-img.onload = function () {
-  var width = Math.min(900, img.width);
-  var height = img.height * (width / img.width);
-  canvas.width = width;
-  canvas.height = height;
-  ctx.drawImage(img, 0, 0, width, height);
-};
-
-var isPress = false;
-var old = null;
-
-//scratch layers coordinates
-var scoordX = [379, 529, 127, 476, 677, 192, 159, 188, 653, 457, 442, 278, 746, 70, 217, 285],
-scoordY = [108, 107, 165, 166, 252, 280, 339, 397, 427, 484, 543, 629, 687, 745, 804, 861],
-swidth = [70, 57, 65, 154, 45, 46, 73, 89, 60, 51, 69, 53, 34, 93, 55, 46],
-sheight = 25;
-
-canvas.addEventListener('mousedown', function (e){
-  isPress = true;
-  old = {x: e.offsetX, y: e.offsetY};
-});
-canvas.addEventListener('mousemove', function (e){
-
-//change cursor over scratch layers  
-for (i=0; i<16; i++) {
-if ((e.offsetX >= scoordX[i] && e.offsetY >= scoordY[i] && e.offsetX <= scoordX[i] + swidth[i] && e.offsetY <= scoordY[i] + sheight))   {
-  	canvas.style.cursor = `url(${imageUrl}), pointer`;
-    break;
-  } else {
-  	canvas.style.cursor = "default";}
-}    
-
- if (isPress) {	
-    var x = e.offsetX;
-    var y = e.offsetY;
-    ctx.globalCompositeOperation = 'destination-out';
-
-    ctx.beginPath();
-    ctx.arc(x, y, 4, 0, 2 * Math.PI);
-    ctx.fill();
-
-    ctx.lineWidth = 6;
-    ctx.beginPath();
-    ctx.moveTo(old.x, old.y);
-    ctx.lineTo(x, y);
-    ctx.stroke();
-    old = {x: x, y: y};
-
-  }
-});
-canvas.addEventListener('mouseup', function (e){
-  isPress = false;
-});
-
-// Touch event handlers
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-        let isDrawing = false;
-        let lastX = 0;
-        let lastY = 0;
-
-        function getTouchPos(canvas, touchEvent) {
-            const rect = canvas.getBoundingClientRect();
-            return {
-                x: touchEvent.touches[0].clientX - rect.left,
-                y: touchEvent.touches[0].clientY - rect.top
-            };
-        }
-
-        function handleTouchStart(event) {
-            event.preventDefault();
-            const touchPos = getTouchPos(canvas, event);
-            lastX = touchPos.x;
-            lastY = touchPos.y;
-            isDrawing = true;
-        }
-
-        function handleTouchMove(event) {
-            event.preventDefault();
-            if (!isDrawing) return;
-
-            const touchPos = getTouchPos(canvas, event);
-            const x = touchPos.x;
-            const y = touchPos.y;
-            ctx.globalCompositeOperation = 'destination-out';
-            ctx.beginPath();  
-            ctx.arc(x, y, 4, 0, 2 * Math.PI);
-            ctx.fill();
-            ctx.lineWidth = 6;
-            ctx.moveTo(lastX, lastY);
-            ctx.lineTo(x, y);
-            ctx.stroke();
-            lastX = x;
-            lastY = y;
-
-        }
-
-        function handleTouchEnd(event) {
-            event.preventDefault();
-            isDrawing = false;
-            canvas.removeEventListener('touchmove', canvas);
-            canvas.removeEventListener('touchend', arguments.callee);
-        }
-
-        function handleTouchCancel(event) {
-            event.preventDefault();
-            isDrawing = false;
-        }
-
-        // Touch event listeners
-        canvas.addEventListener('touchstart', handleTouchStart);
-        canvas.addEventListener('touchmove', handleTouchMove);
-        canvas.addEventListener('touchend', handleTouchEnd);
-        canvas.addEventListener('touchcancel', handleTouchCancel);
-
-}
-</script> 
-<!-- write your code here -->
 </head>
-<body onload="init();" style="margin:0px;">
-<div class="box">
-    <canvas id="canvas" width="900" height="950"></canvas>
-</div>
+<style> h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+}
+p  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+    margin-left:20px;
+    text-indent: 15px;
+}</style>
+<body>
+<h2 align="center">Основные правила кибербезопасности </h2>
+<p>Используйте надёжные и уникальные пароли (длиной 10-12 символов, с использованием заглавных, прописных букв, цифр и спецсимволов). Не используйте один и тот же пароль для разных сайтов. По возможности используйте двухфакторную или многофакторную аутентификацию.</p>
+<p>Не публикуйте свои персональные данные в Интернете: адрес, паспортные данные, телефон и пр. Никогда не сообщайте незнакомцам данные своей банковской карты, CVC-коды и коды подтверждения из СМС. Будьте бдительны: мошенники часто используют страх, эйфорию легкого выигрыша и сострадание, как эмоциональные «крючки», чтобы получить доступ к личной информации или ресурсам.</p>
+<p>Не скачивайте файлы с подозрительных сайтов. Загружайте программы и файлы только с официальных сайтов. Если файл пришёл от незнакомца или с непонятного сайта — не открывайте его. Такие файлы могут навредить вашему компьютеру.</p>
+<p> Будьте осторожны с ссылками. Не переходите по ссылкам из сообщений от незнакомых людей. Если вам пишут, что вы выиграли приз или просят срочно что-то сделать — это может быть обман. </p>
+<p>Посещайте безопасные сайты с расширением https или значком замка. Буква s и закрытый замок означают, что соединение защищено: когда вы вводите на сайте данные, они автоматически шифруются, и их не могут перехватить злоумышленники. Всегда проверяйте правильность написания адреса сайта: в нем не должно быть ошибок и лишних слов. </p>
+<p>Иногда злоумышленники подделывают доменные имена, добавляя лишние слова к названию реально существующего сайта. Избегайте посещения сайтов с большим количеством всплывающих окон, орфографических ошибок или отличающихся по дизайну от оригинальных.</p>
+<p>Не используйте публичный Wi-Fi для доступа к важным сервисам. Особенно – с целью осуществления финансовых операций. Всегда проверяйте правильность написания названия сети.</p>
+<p> Используйте антивирусные программы, регулярно обновляйте приложения и ОС.</p>
+<p>Цифровые копии документов необходимо хранить в надёжном месте. Фотографии паспорта не должны находиться в галерее телефона или в облачном хранилище без пароля. Перенесите их на защищённый носитель, например, на флешку или в зашифрованный архив на компьютере.</p>
+<p> Заведите отдельную карту для онлайн-покупок. Не храните на ней деньги. Пополняйте ее ровно на ту сумму, которая необходима для совершения покупки.</p>
+<p>Сокращайте ваш цифровой след. Предоставляйте приложениям доступ только к тем данным, которые нужны для их работы. Удаляйте аккаунты, которыми не пользуетесь. Откажитесь от персонализированной рекламы.</p>
+<p style="text-align:center;"><a href="stest.html"><b>Проверь себя</b></a></p>
 </body>
 </html>
