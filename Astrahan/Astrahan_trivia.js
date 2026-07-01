@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"Astrahan_trivia_atlas_", frames: [[1604,1673,214,193],[1820,1582,90,90],[712,1800,641,119],[1820,1834,93,21],[1915,1947,93,17],[1820,1857,93,9],[1820,1794,100,38],[1912,1588,100,38],[1912,1548,100,38],[1820,1754,100,38],[1820,1674,100,38],[1915,1834,100,38],[1912,1628,100,38],[1604,1909,82,16],[1820,1714,100,38],[1897,1508,100,38],[1807,1976,100,38],[1909,1976,100,38],[1604,1868,83,39],[1915,1909,77,36],[1922,1668,74,35],[1776,1461,119,119],[1695,1868,110,110],[1807,1868,106,106],[0,1921,846,30],[848,1935,845,28],[0,1043,845,623],[0,0,2004,1041],[0,1790,710,120],[0,1668,710,120],[712,1678,710,120],[1294,1043,710,120],[1294,1165,710,120],[1897,1461,93,45],[1915,1874,93,33],[1424,1673,178,260],[847,1043,445,351],[847,1396,497,280],[1776,1287,186,172],[1346,1287,428,191],[1346,1480,428,191],[1994,1909,31,27]]}
+		{name:"Astrahan_trivia_atlas_", frames: [[1604,1673,214,193],[1820,1582,90,90],[712,1800,641,119],[1820,1834,93,21],[1915,1947,93,17],[1820,1857,93,9],[1897,1508,100,38],[1909,1976,100,38],[1807,1976,100,38],[1820,1674,100,38],[1912,1548,100,38],[1912,1628,100,38],[1912,1588,100,38],[1604,1909,82,16],[1820,1794,100,38],[1820,1714,100,38],[1820,1754,100,38],[1915,1834,100,38],[1604,1868,83,39],[1915,1909,77,36],[1922,1668,74,35],[1776,1461,119,119],[1695,1868,110,110],[1807,1868,106,106],[0,1921,846,30],[848,1935,845,28],[0,1043,845,623],[0,0,2004,1041],[0,1668,710,120],[0,1790,710,120],[712,1678,710,120],[1294,1043,710,120],[1294,1165,710,120],[1897,1461,93,45],[1915,1874,93,33],[1424,1673,178,260],[847,1043,445,351],[847,1396,497,280],[1776,1287,186,172],[1346,1287,428,191],[1346,1480,428,191],[1994,1909,31,27]]}
 ];
 
 
@@ -339,7 +339,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 
 	// timeline functions:
 	this.frame_0 = function() {
-		if ((window.parent.isTyping==true) && (window.parent.s==0))
+		if ((isTyping==true) && (s==0))
 		{
 		this.play();
 		}else{
@@ -524,7 +524,7 @@ p.nominalBounds = new cjs.Rectangle(-4,-4,107.1,107.1);
 
 	// timeline functions:
 	this.frame_0 = function() {
-		if ((window.parent.isTyping==true) && (window.parent.s==1))
+		if ((isTyping==true) && (s==1))
 		{
 		this.play();
 		}else{
@@ -645,8 +645,9 @@ p.nominalBounds = new cjs.Rectangle(-160.2,-29.7,320.5,59.5);
 		this.visible = false;
 		
 		this.on('click', function (e){
-		if (window.parent.isVarAnim == false) {
-		if (window.parent.f == 1) {
+		if (isVarAnim == false) {
+			this.cursor = "default";
+		if (f == 1) {
 			exportRoot.vobla.visible = false;
 			this.gotoAndPlay("fishansw") 
 		}else{	
@@ -659,7 +660,7 @@ p.nominalBounds = new cjs.Rectangle(-160.2,-29.7,320.5,59.5);
 		});
 	}
 	this.frame_1 = function() {
-		window.parent.isVarAnim = true;
+		isVarAnim = true;
 		var soundr = new Audio('./sound/right.mp3');
 		var soundw = new Audio('./sound/wrong.mp3');
 		
@@ -671,7 +672,7 @@ p.nominalBounds = new cjs.Rectangle(-160.2,-29.7,320.5,59.5);
 		 }
 	}
 	this.frame_7 = function() {
-		if (window.parent.ra == this.name.charAt(1)) {
+		if (ra == this.name.charAt(1)) {
 			 this.gotoAndPlay("right");
 		 }else{
 			this.gotoAndPlay("wrong");
@@ -681,7 +682,7 @@ p.nominalBounds = new cjs.Rectangle(-160.2,-29.7,320.5,59.5);
 		//this.stop();
 	}
 	this.frame_24 = function() {
-		window.parent.isVarAnim = false;
+		isVarAnim = false;
 		exportRoot.arbuz.visible = true;
 		exportRoot.play();
 		this.gotoAndStop(0);
@@ -690,25 +691,25 @@ p.nominalBounds = new cjs.Rectangle(-160.2,-29.7,320.5,59.5);
 		//this.stop();
 	}
 	this.frame_38 = function() {
-		window.parent.isVarAnim = false;
+		isVarAnim = false;
 		exportRoot.arbuz.visible = true;
 		this.gotoAndStop(0);
 	}
 	this.frame_39 = function() {
-		window.parent.isVarAnim = true;
+		isVarAnim = true;
 		
 		var soundr = new Audio('./sound/right.mp3');
 		var soundw = new Audio('./sound/wrong.mp3');
 		
 		
-		if (window.parent.ra == this.name.charAt(1)) {
+		if (ra == this.name.charAt(1)) {
 			 soundr.play();
 		 }else{
 			 soundw.play();
 		 }
 	}
 	this.frame_45 = function() {
-		if (window.parent.ra == this.name.charAt(1)) {
+		if (ra == this.name.charAt(1)) {
 			 this.gotoAndPlay("rightf");
 		 }else{
 			this.gotoAndPlay("wrongf");
@@ -718,7 +719,7 @@ p.nominalBounds = new cjs.Rectangle(-160.2,-29.7,320.5,59.5);
 		//this.stop();
 	}
 	this.frame_62 = function() {
-		window.parent.isVarAnim = false;
+		isVarAnim = false;
 		exportRoot.vobla.visible = true;
 		exportRoot.play();
 		this.gotoAndStop(0);
@@ -727,7 +728,7 @@ p.nominalBounds = new cjs.Rectangle(-160.2,-29.7,320.5,59.5);
 		//this.stop();
 	}
 	this.frame_76 = function() {
-		window.parent.isVarAnim = false;
+		isVarAnim = false;
 		exportRoot.vobla.visible = true;
 		this.gotoAndStop(0);
 	}
@@ -851,14 +852,11 @@ p.nominalBounds = new cjs.Rectangle(-0.7,-0.7,597.4000000000001,21.2);
 	this.initialize(mode,startPosition,loop,{Intro:0,Start:61,bq1:227,Q1:228,o1:234,bq2:237,Q2:238,o2:239,bq3:241,Q3:242,o3:243,bq4:244,Q4forfish:245,o4:246,bq5:247,Q5:248,o5:249,bq6:252,Q6:253,o6:254,bq7:256,Q7:257,o7:258,bq8:260,Q8:261,o8:262,signal:263,bq9:291,Q9:292,o9:293,bq10:297,Q10:298,o10:299,bq11:303,Q11:304,o11:305,bq12:309,Q12:310,o12:311,bq13:316,Q13:317,o13:318});
 
 	// timeline functions:
-	this.frame_0 = function() {
-		isTyping = false; // защита от повторного запуска
-	}
 	this.frame_61 = function() {
 		this.stop(); 
 		root = this;
 		stage.enableMouseOver(10);
-		s = 0//определяет кто говорит ("0" - рыба, "1" - арбуз)
+		
 		textToType = "Приветствую всех в этот солнечный день!\nКому головой поработать не лень?\nАстраханскую предлагаю вам я икру!\nХотела сказать - не «икру», а ИГРУ!";
 		currentIndex = 0;
 		textField = this.qbox.myText;
@@ -931,6 +929,7 @@ p.nominalBounds = new cjs.Rectangle(-0.7,-0.7,597.4000000000001,21.2);
 		//Кнопка "вперёд" исчезает при появлении вариантов ответов
 		root.hideFbtn = function() {
 		if (root.fbtn.visible == true) {
+		this.cursor = "default";
 		root.fbtn.visible = false;
 		}else{
 			return;
@@ -981,10 +980,6 @@ p.nominalBounds = new cjs.Rectangle(-0.7,-0.7,597.4000000000001,21.2);
 		this.v3.visible = true;
 		
 		root.hideFbtn();
-		
-		isVarAnim = false;//определяет - идёт ли анимация варианта ответа
-		
-		f = 0;//определяет отвечающего персонажа
 		
 		ra = 2; //правильный ответ
 		
@@ -1852,7 +1847,7 @@ p.nominalBounds = new cjs.Rectangle(-0.7,-0.7,597.4000000000001,21.2);
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(61).call(this.frame_61).wait(67).call(this.frame_128).wait(57).call(this.frame_185).wait(26).call(this.frame_211).wait(1).call(this.frame_212).wait(14).call(this.frame_226).wait(1).call(this.frame_227).wait(1).call(this.frame_228).wait(1).call(this.frame_229).wait(4).call(this.frame_233).wait(1).call(this.frame_234).wait(1).call(this.frame_235).wait(1).call(this.frame_236).wait(1).call(this.frame_237).wait(1).call(this.frame_238).wait(1).call(this.frame_239).wait(1).call(this.frame_240).wait(1).call(this.frame_241).wait(1).call(this.frame_242).wait(1).call(this.frame_243).wait(1).call(this.frame_244).wait(1).call(this.frame_245).wait(1).call(this.frame_246).wait(1).call(this.frame_247).wait(1).call(this.frame_248).wait(1).call(this.frame_249).wait(1).call(this.frame_250).wait(1).call(this.frame_251).wait(1).call(this.frame_252).wait(1).call(this.frame_253).wait(1).call(this.frame_254).wait(1).call(this.frame_255).wait(1).call(this.frame_256).wait(1).call(this.frame_257).wait(1).call(this.frame_258).wait(1).call(this.frame_259).wait(1).call(this.frame_260).wait(1).call(this.frame_261).wait(1).call(this.frame_262).wait(1).call(this.frame_263).wait(25).call(this.frame_288).wait(1).call(this.frame_289).wait(1).call(this.frame_290).wait(1).call(this.frame_291).wait(1).call(this.frame_292).wait(1).call(this.frame_293).wait(1).call(this.frame_294).wait(1).call(this.frame_295).wait(1).call(this.frame_296).wait(1).call(this.frame_297).wait(1).call(this.frame_298).wait(1).call(this.frame_299).wait(1).call(this.frame_300).wait(1).call(this.frame_301).wait(1).call(this.frame_302).wait(1).call(this.frame_303).wait(1).call(this.frame_304).wait(1).call(this.frame_305).wait(1).call(this.frame_306).wait(1).call(this.frame_307).wait(1).call(this.frame_308).wait(1).call(this.frame_309).wait(1).call(this.frame_310).wait(1).call(this.frame_311).wait(1).call(this.frame_312).wait(1).call(this.frame_313).wait(1).call(this.frame_314).wait(1).call(this.frame_315).wait(1).call(this.frame_316).wait(1).call(this.frame_317).wait(1).call(this.frame_318).wait(1).call(this.frame_319).wait(1).call(this.frame_320).wait(122).call(this.frame_442).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(61).call(this.frame_61).wait(67).call(this.frame_128).wait(57).call(this.frame_185).wait(26).call(this.frame_211).wait(1).call(this.frame_212).wait(14).call(this.frame_226).wait(1).call(this.frame_227).wait(1).call(this.frame_228).wait(1).call(this.frame_229).wait(4).call(this.frame_233).wait(1).call(this.frame_234).wait(1).call(this.frame_235).wait(1).call(this.frame_236).wait(1).call(this.frame_237).wait(1).call(this.frame_238).wait(1).call(this.frame_239).wait(1).call(this.frame_240).wait(1).call(this.frame_241).wait(1).call(this.frame_242).wait(1).call(this.frame_243).wait(1).call(this.frame_244).wait(1).call(this.frame_245).wait(1).call(this.frame_246).wait(1).call(this.frame_247).wait(1).call(this.frame_248).wait(1).call(this.frame_249).wait(1).call(this.frame_250).wait(1).call(this.frame_251).wait(1).call(this.frame_252).wait(1).call(this.frame_253).wait(1).call(this.frame_254).wait(1).call(this.frame_255).wait(1).call(this.frame_256).wait(1).call(this.frame_257).wait(1).call(this.frame_258).wait(1).call(this.frame_259).wait(1).call(this.frame_260).wait(1).call(this.frame_261).wait(1).call(this.frame_262).wait(1).call(this.frame_263).wait(25).call(this.frame_288).wait(1).call(this.frame_289).wait(1).call(this.frame_290).wait(1).call(this.frame_291).wait(1).call(this.frame_292).wait(1).call(this.frame_293).wait(1).call(this.frame_294).wait(1).call(this.frame_295).wait(1).call(this.frame_296).wait(1).call(this.frame_297).wait(1).call(this.frame_298).wait(1).call(this.frame_299).wait(1).call(this.frame_300).wait(1).call(this.frame_301).wait(1).call(this.frame_302).wait(1).call(this.frame_303).wait(1).call(this.frame_304).wait(1).call(this.frame_305).wait(1).call(this.frame_306).wait(1).call(this.frame_307).wait(1).call(this.frame_308).wait(1).call(this.frame_309).wait(1).call(this.frame_310).wait(1).call(this.frame_311).wait(1).call(this.frame_312).wait(1).call(this.frame_313).wait(1).call(this.frame_314).wait(1).call(this.frame_315).wait(1).call(this.frame_316).wait(1).call(this.frame_317).wait(1).call(this.frame_318).wait(1).call(this.frame_319).wait(1).call(this.frame_320).wait(122).call(this.frame_442).wait(1));
 
 	// Progress
 	this.fbtn = new lib.ForwardBtn();
@@ -1951,7 +1946,7 @@ lib.properties = {
 	color: "#FFCC66",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Astrahan_trivia_atlas_.png?1782790699862", id:"Astrahan_trivia_atlas_"}
+		{src:"images/Astrahan_trivia_atlas_.png?1782869249908", id:"Astrahan_trivia_atlas_"}
 	],
 	preloads: []
 };
