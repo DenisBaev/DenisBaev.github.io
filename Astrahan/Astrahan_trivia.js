@@ -665,7 +665,7 @@ p.nominalBounds = new cjs.Rectangle(-160.2,-29.7,320.5,59.5);
 		var soundw = new Audio('./sound/wrong.mp3');
 		
 		
-		if (window.parent.ra == this.name.charAt(1)) {
+		if (ra == this.name.charAt(1)) {
 			 soundr.play();
 		 }else{
 			 soundw.play();
