@@ -48,8 +48,8 @@ ___
 <br>
 ___
 
-<h2><a href="https://denisbaev.github.io/happyhangman">Happy New Hangman</a></h2>
-Увлекательная новогодняя игра по правилам знаменитой "Виселицы".
+<h2><a href="https://denisbaev.github.io/smolino">озеро Смолино</a></h2>
+Викторина "озеро Смолино" представлена в виде путешествия по озеру с тематическими вопросами.
 <br>
 <br>
 <br>
