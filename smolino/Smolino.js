@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"Smolino_atlas_", frames: [[206,1936,36,30],[210,1890,36,30],[174,1978,30,40],[174,1936,30,40],[174,1896,34,38],[157,1858,36,36],[136,1996,36,36],[0,1766,120,50],[122,1766,120,50],[0,1818,62,62],[244,1766,62,62],[64,1818,62,62],[81,1882,22,5],[119,1920,12,7],[128,1858,22,22],[128,1818,56,38],[186,1818,56,38],[58,1907,59,27],[0,1941,59,27],[136,1920,36,36],[136,1958,36,36],[60,2015,39,30],[195,1858,39,30],[105,1882,9,9],[98,1977,36,36],[119,1882,36,36],[316,1712,90,90],[0,1970,58,26],[0,1998,58,26],[60,1970,36,39],[98,1936,36,39],[0,0,600,800],[0,1907,56,32],[0,1882,79,23],[0,802,600,800],[316,1604,314,52],[0,1604,314,52],[0,1658,314,52],[316,1658,314,52],[0,1712,314,52],[61,1936,30,30],[101,2015,30,30]]}
+		{name:"Smolino_atlas_", frames: [[1151,1808,36,30],[685,1820,36,30],[1167,1644,30,40],[1119,1810,30,40],[1167,1604,34,38],[647,1812,36,36],[515,1902,36,36],[393,1902,120,50],[1005,1694,120,50],[826,793,12,7],[918,711,22,22],[724,793,100,6],[481,1595,102,5],[755,1820,97,9],[755,1831,94,9],[481,1513,62,62],[1069,1746,62,62],[481,1604,206,206],[1204,1178,206,206],[208,1781,183,183],[0,1781,206,206],[1005,1746,62,62],[0,0,947,709],[1204,1594,206,206],[1204,1386,206,206],[1167,1686,22,5],[1127,1694,56,38],[1133,1734,56,38],[949,0,600,800],[602,765,59,27],[663,765,59,27],[1081,1810,36,36],[1191,1802,36,36],[844,765,39,30],[885,765,39,30],[918,735,9,9],[1043,1810,36,36],[1005,1810,36,36],[555,1812,90,90],[724,765,58,26],[784,765,58,26],[545,1513,36,39],[545,1554,36,39],[0,711,600,800],[1204,802,306,374],[1133,1774,56,32],[393,1781,79,23],[0,1513,479,266],[602,802,600,800],[393,1812,160,88],[1005,1604,160,88],[689,1658,314,52],[602,711,314,52],[689,1604,314,52],[689,1766,314,52],[689,1712,314,52],[723,1820,30,30],[647,1850,30,30]]}
 ];
 
 
@@ -74,233 +74,345 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedTexturedBitmap_2 = function() {
+(lib.CachedTexturedBitmap_10 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_3 = function() {
+(lib.CachedTexturedBitmap_11 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_4 = function() {
+(lib.CachedTexturedBitmap_12 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_5 = function() {
+(lib.CachedTexturedBitmap_13 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_6 = function() {
+(lib.CachedTexturedBitmap_14 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_7 = function() {
+(lib.CachedTexturedBitmap_15 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.duck = function() {
+(lib.CachedTexturedBitmap_2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.duck2 = function() {
+(lib.CachedTexturedBitmap_3 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.fish = function() {
+(lib.CachedTexturedBitmap_35 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.fish2 = function() {
+(lib.CachedTexturedBitmap_36 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.flower = function() {
+(lib.CachedTexturedBitmap_38 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.flower2 = function() {
+(lib.CachedTexturedBitmap_39 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.helmet = function() {
+(lib.CachedTexturedBitmap_4 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.helmet2 = function() {
+(lib.CachedTexturedBitmap_40 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.krug = function() {
+(lib.CachedTexturedBitmap_45 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.lavka = function() {
+(lib.CachedTexturedBitmap_46 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.lavka2 = function() {
+(lib.CachedTexturedBitmap_9 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.nextbutton = function() {
+(lib.duck = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(26);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ondatra = function() {
+(lib.duck2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(27);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ondatra2 = function() {
+(lib.End_frame = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(28);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.palette = function() {
+(lib.fish = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(29);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.palette2 = function() {
+(lib.fish2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(30);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.poetry = function() {
+(lib.flower = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(31);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.river_tram = function() {
+(lib.flower2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(32);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.smallplotva = function() {
+(lib.helmet = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(33);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Smolino_map = function() {
+(lib.helmet2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(34);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.varbtn01 = function() {
+(lib.krug = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(35);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.varbtn02 = function() {
+(lib.lavka = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(36);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.varbtn02_2 = function() {
+(lib.lavka2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(37);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.varbtn03 = function() {
+(lib.nextbutton = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(38);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.varbtn03_2 = function() {
+(lib.ondatra = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(39);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.waterdrop = function() {
+(lib.ondatra2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(40);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.waterdrop2 = function() {
+(lib.palette = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(41);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.palette2 = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(42);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.poetry = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(43);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.prichal_01 = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(44);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.river_tram = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(45);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.smallplotva = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(46);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Smolino_end = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(47);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Smolino_map = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(48);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.swim_sign_man01 = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(49);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.swim_sign_man02 = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(50);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.varbtn01 = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(51);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.varbtn02 = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(52);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.varbtn02_2 = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(53);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.varbtn03 = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(54);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.varbtn03_2 = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(55);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.waterdrop = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(56);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.waterdrop2 = function() {
+	this.initialize(ss["Smolino_atlas_"]);
+	this.gotoAndStop(57);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -321,28 +433,6 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	}
 
 
-(lib.Zast = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_0 = function() {
-		this.stop();
-		/*zpics = new createjs.Bitmap('pics/poetry.jpg');
-		this.addChild(zpics);*/
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
-
-	// pic
-	this.instance = new lib.poetry();
-	this.instance.parent = this;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.Zast, new cjs.Rectangle(0,0,600,800), null);
-
-
 (lib.TargetDot = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
@@ -355,7 +445,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// tdot
-	this.instance = new lib.CachedTexturedBitmap_7();
+	this.instance = new lib.CachedTexturedBitmap_11();
 	this.instance.parent = this;
 	this.instance.setTransform(-0.5,-0.5,0.5,0.5);
 
@@ -364,34 +454,124 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 }).prototype = getMCSymbolPrototype(lib.TargetDot, new cjs.Rectangle(-0.5,-0.5,11,11), null);
 
 
+(lib.Swimsign = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_78 = function() {
+		this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(78).call(this.frame_78).wait(1));
+
+	// znak
+	this.instance = new lib.CachedTexturedBitmap_39();
+	this.instance.parent = this;
+	this.instance.setTransform(0.95,0.45,1.3944,1.3944);
+
+	this.instance_1 = new lib.CachedTexturedBitmap_35();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(0.95,0.45,1.3944,1.3944);
+
+	this.instance_2 = new lib.CachedTexturedBitmap_36();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(0.95,0.45,1.3944,1.3944);
+
+	this.instance_3 = new lib.CachedTexturedBitmap_45();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(0.95,0.45,1.3944,1.3944);
+
+	this.instance_4 = new lib.CachedTexturedBitmap_46();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(0.95,0.45,1.3944,1.3944);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},20).to({state:[{t:this.instance_2}]},8).to({state:[{t:this.instance_1}]},10).to({state:[{t:this.instance_2}]},10).to({state:[{t:this.instance_1}]},10).to({state:[{t:this.instance_3}]},10).to({state:[{t:this.instance_4}]},10).wait(1));
+
+	// man
+	this.instance_5 = new lib.swim_sign_man01();
+	this.instance_5.parent = this;
+	this.instance_5.setTransform(66,100);
+
+	this.instance_6 = new lib.swim_sign_man02();
+	this.instance_6.parent = this;
+	this.instance_6.setTransform(66,100);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5}]}).to({state:[{t:this.instance_5}]},20).to({state:[{t:this.instance_5}]},8).to({state:[{t:this.instance_5}]},10).to({state:[{t:this.instance_5}]},10).to({state:[{t:this.instance_5}]},10).to({state:[{t:this.instance_5}]},10).to({state:[{t:this.instance_6}]},10).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(68).to({_off:true},10).wait(1));
+
+	// whitecircle
+	this.instance_7 = new lib.CachedTexturedBitmap_38();
+	this.instance_7.parent = this;
+	this.instance_7.setTransform(20,17.95,1.3944,1.3944);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(79));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(1,0.5,287.2,287.2);
+
+
 (lib.Ship = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// Nadpisi
-	this.instance = new lib.CachedTexturedBitmap_6();
+	// timeline functions:
+	this.frame_0 = function() {
+		this.stop();
+		
+		m = 0;
+	}
+	this.frame_4 = function() {
+		this.gotoAndPlay(1);
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(4).call(this.frame_4).wait(1));
+
+	// Water
+	this.instance = new lib.CachedTexturedBitmap_12();
 	this.instance.parent = this;
-	this.instance.setTransform(42.75,16.9,0.5,0.5);
+	this.instance.setTransform(2.75,27.6,0.5,0.5);
 
-	this.instance_1 = new lib.CachedTexturedBitmap_5();
+	this.instance_1 = new lib.CachedTexturedBitmap_13();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(24.65,16.6,0.5,0.5);
+	this.instance_1.setTransform(2,27.75,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this.instance_2 = new lib.CachedTexturedBitmap_14();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(3,26.25,0.5,0.5);
+
+	this.instance_3 = new lib.CachedTexturedBitmap_15();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(3.25,26.1,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(1));
+
+	// Nadpisi
+	this.instance_4 = new lib.CachedTexturedBitmap_10();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(42.75,16.9,0.5,0.5);
+
+	this.instance_5 = new lib.CachedTexturedBitmap_9();
+	this.instance_5.parent = this;
+	this.instance_5.setTransform(24.65,16.6,0.5,0.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5},{t:this.instance_4}]}).wait(5));
 
 	// Krug
-	this.instance_2 = new lib.krug();
-	this.instance_2.parent = this;
-	this.instance_2.setTransform(9,13);
+	this.instance_6 = new lib.krug();
+	this.instance_6.parent = this;
+	this.instance_6.setTransform(9,13);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(5));
 
 	// Ship
-	this.instance_3 = new lib.river_tram();
-	this.instance_3.parent = this;
+	this.instance_7 = new lib.river_tram();
+	this.instance_7.parent = this;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(5));
 
-}).prototype = getMCSymbolPrototype(lib.Ship, new cjs.Rectangle(0,0,56,32), null);
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,56,32);
 
 
 (lib.SelectCur = function(mode,startPosition,loop) {
@@ -601,6 +781,75 @@ p.nominalBounds = new cjs.Rectangle(0,0,90,90);
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,120,50);
+
+
+(lib.Zast = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_0 = function() {
+		this.stop();
+	}
+	this.frame_1 = function() {
+		this.stop();
+		
+		this.nb.on('click', function (e){
+		 this.visible = false;
+		 root.zast.play();
+		});
+	}
+	this.frame_2 = function() {
+		this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1).call(this.frame_2).wait(1));
+
+	// text
+	this.instance = new lib.CachedTexturedBitmap_40();
+	this.instance.parent = this;
+	this.instance.setTransform(64.55,68.65,0.5,0.5);
+	this.instance._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({_off:true},1).wait(1));
+
+	// button
+	this.nb = new lib.NextBtn();
+	this.nb.name = "nb";
+	this.nb.parent = this;
+	this.nb.setTransform(446,636.85);
+	this.nb._off = true;
+	new cjs.ButtonHelper(this.nb, 0, 1, 2);
+
+	this.timeline.addTween(cjs.Tween.get(this.nb).wait(1).to({_off:false},0).wait(2));
+
+	// znak
+	this.instance_1 = new lib.Smolino_end();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(63,104);
+
+	this.znak = new lib.Swimsign();
+	this.znak.name = "znak";
+	this.znak.parent = this;
+	this.znak.setTransform(317.15,281.15,0.3586,0.3586,0,0,0,144.5,144.2);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.znak}]},1).wait(1));
+
+	// pic
+	this.instance_2 = new lib.poetry();
+	this.instance_2.parent = this;
+
+	this.instance_3 = new lib.End_frame();
+	this.instance_3.parent = this;
+
+	this.instance_4 = new lib.prichal_01();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(0,0,2.139,2.139);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2}]}).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,654.6,800);
 
 
 (lib.Variants = function(mode,startPosition,loop) {
@@ -893,7 +1142,7 @@ p.nominalBounds = new cjs.Rectangle(-135.4,0,582.9,52);
 	this.frame_13 = function() {
 		this.qpics.removeAllChildren();
 		
-		textToType = " В 1948 году на озере была построена водная\nстанция. Там проводились турниры по\nплаванью и парусному спорту. Помимо\nстанции, на берегу появились Дворец\nкультуры ЧТПЗ, башня, плавучий ресторан\nи первый в городе ОН.";
+		textToType = " В 1948 году на озере была построена водная\nстанция. Там проводились турниры по\nплаванью и парусному спорту. Помимо\nстанции, на берегу появились: дворец\nкультуры ЧТПЗ, башня, плавучий ресторан\nи первый в городе ОН.";
 		
 		ra = 3;
 		
@@ -1270,7 +1519,7 @@ p.nominalBounds = new cjs.Rectangle(-0.5,-0.5,31,31);
 		
 		// Движение корабля
 		function movingShip() {
-			
+		obj.play();
 		const target = waypoints[loc];
 		const dx = target.x - obj.x;
 		const dy = target.y - obj.y;
@@ -1287,11 +1536,14 @@ p.nominalBounds = new cjs.Rectangle(-0.5,-0.5,31,31);
 		
 		// Остановка корабля
 		function stopingShip() {
+			root.ship.gotoAndStop(0);
 			loc++;
 			if (endq == false) {
 			qlocs[loc].play();
 			}else{
-				alert("Викторина завершена");
+				//alert("Викторина завершена");
+				root.zast.gotoAndStop(1);
+				createjs.Tween.get(root.zast).to({ alpha: 1 }, 1450);
 			}
 		    }
 			
@@ -1462,7 +1714,7 @@ p.nominalBounds = new cjs.Rectangle(-0.5,-0.5,31,31);
 	this.nbtn = new lib.NextBtn();
 	this.nbtn.name = "nbtn";
 	this.nbtn.parent = this;
-	this.nbtn.setTransform(517.4,721,0.7,0.7);
+	this.nbtn.setTransform(512.25,714.9,0.7,0.7);
 	new cjs.ButtonHelper(this.nbtn, 0, 1, 2);
 
 	this.zast = new lib.Zast();
@@ -1512,12 +1764,12 @@ p.nominalBounds = new cjs.Rectangle(-0.5,-0.5,31,31);
 	this.td15 = new lib.TargetDot();
 	this.td15.name = "td15";
 	this.td15.parent = this;
-	this.td15.setTransform(394.65,531.9,1,1,0,0,0,5,5);
+	this.td15.setTransform(381.65,525.9,1,1,0,0,0,5,5);
 
 	this.td14 = new lib.TargetDot();
 	this.td14.name = "td14";
 	this.td14.parent = this;
-	this.td14.setTransform(475.15,414.9,1,1,0,0,0,5,5);
+	this.td14.setTransform(457.15,407.9,1,1,0,0,0,5,5);
 
 	this.td13 = new lib.TargetDot();
 	this.td13.name = "td13";
@@ -1689,7 +1941,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Smolino_atlas_.png?1787882502873", id:"Smolino_atlas_"}
+		{src:"images/Smolino_atlas_.png?1788512919018", id:"Smolino_atlas_"}
 	],
 	preloads: []
 };
