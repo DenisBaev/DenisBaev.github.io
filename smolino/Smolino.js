@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"Smolino_atlas_", frames: [[1151,1808,36,30],[685,1820,36,30],[1167,1644,30,40],[1119,1810,30,40],[1167,1604,34,38],[647,1812,36,36],[515,1902,36,36],[393,1902,120,50],[1005,1694,120,50],[826,793,12,7],[918,711,22,22],[724,793,100,6],[481,1595,102,5],[755,1820,97,9],[755,1831,94,9],[481,1513,62,62],[1069,1746,62,62],[481,1604,206,206],[1204,1178,206,206],[208,1781,183,183],[0,1781,206,206],[1005,1746,62,62],[0,0,947,709],[1204,1594,206,206],[1204,1386,206,206],[1167,1686,22,5],[1127,1694,56,38],[1133,1734,56,38],[949,0,600,800],[602,765,59,27],[663,765,59,27],[1081,1810,36,36],[1191,1802,36,36],[844,765,39,30],[885,765,39,30],[918,735,9,9],[1043,1810,36,36],[1005,1810,36,36],[555,1812,90,90],[724,765,58,26],[784,765,58,26],[545,1513,36,39],[545,1554,36,39],[0,711,600,800],[1204,802,306,374],[1133,1774,56,32],[393,1781,79,23],[0,1513,479,266],[602,802,600,800],[393,1812,160,88],[1005,1604,160,88],[689,1658,314,52],[602,711,314,52],[689,1604,314,52],[689,1766,314,52],[689,1712,314,52],[723,1820,30,30],[647,1850,30,30]]}
+		{name:"Smolino_atlas_", frames: [[106,2006,36,30],[144,2006,36,30],[570,1554,30,40],[74,1974,30,40],[38,1974,34,38],[223,1971,36,36],[185,1971,36,36],[1013,1604,120,50],[509,1812,120,50],[553,1554,12,7],[1204,1178,206,206],[1204,1594,206,206],[489,1604,206,206],[1204,1386,206,206],[0,1789,183,183],[631,1812,62,62],[147,1974,22,22],[0,0,947,709],[489,1513,62,62],[277,1879,62,62],[783,765,100,6],[783,773,102,5],[347,1789,97,9],[347,1800,94,9],[570,1596,22,5],[509,1864,56,38],[341,1902,56,38],[949,0,600,800],[602,765,59,27],[567,1864,59,27],[399,1936,36,36],[277,1943,36,36],[106,1974,39,30],[0,2014,39,30],[553,1563,9,9],[341,1942,36,36],[0,1974,36,36],[185,1879,90,90],[723,765,58,26],[663,765,58,26],[553,1513,36,39],[457,1902,36,39],[0,711,600,800],[1204,802,306,374],[399,1902,56,32],[489,1577,79,23],[0,1513,487,274],[602,802,600,800],[185,1789,160,88],[347,1812,160,88],[697,1766,314,52],[697,1658,314,52],[697,1712,314,52],[602,711,314,52],[697,1604,314,52],[41,2014,30,30],[73,2016,30,30]]}
 ];
 
 
@@ -81,35 +81,35 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedTexturedBitmap_11 = function() {
+(lib.CachedTexturedBitmap_12 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_12 = function() {
+(lib.CachedTexturedBitmap_16 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_13 = function() {
+(lib.CachedTexturedBitmap_17 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_14 = function() {
+(lib.CachedTexturedBitmap_18 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_15 = function() {
+(lib.CachedTexturedBitmap_19 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
@@ -123,296 +123,289 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedTexturedBitmap_3 = function() {
+(lib.CachedTexturedBitmap_20 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_35 = function() {
+(lib.CachedTexturedBitmap_21 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_36 = function() {
+(lib.CachedTexturedBitmap_3 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_38 = function() {
+(lib.CachedTexturedBitmap_4 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_39 = function() {
+(lib.CachedTexturedBitmap_5 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_4 = function() {
+(lib.CachedTexturedBitmap_6 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_40 = function() {
+(lib.CachedTexturedBitmap_7 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_45 = function() {
+(lib.CachedTexturedBitmap_8 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_46 = function() {
+(lib.CachedTexturedBitmap_9 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(24);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedTexturedBitmap_9 = function() {
+(lib.duck = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(25);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.duck = function() {
+(lib.duck2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(26);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.duck2 = function() {
+(lib.End_frame = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(27);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.End_frame = function() {
+(lib.fish = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(28);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.fish = function() {
+(lib.fish2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(29);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.fish2 = function() {
+(lib.flower = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(30);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.flower = function() {
+(lib.flower2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(31);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.flower2 = function() {
+(lib.helmet = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(32);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.helmet = function() {
+(lib.helmet2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(33);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.helmet2 = function() {
+(lib.krug = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(34);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.krug = function() {
+(lib.lavka = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(35);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.lavka = function() {
+(lib.lavka2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(36);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.lavka2 = function() {
+(lib.nextbutton = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(37);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.nextbutton = function() {
+(lib.ondatra = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(38);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ondatra = function() {
+(lib.ondatra2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(39);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.ondatra2 = function() {
+(lib.palette = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(40);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.palette = function() {
+(lib.palette2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(41);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.palette2 = function() {
+(lib.poetry = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(42);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.poetry = function() {
+(lib.prichal_01 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(43);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.prichal_01 = function() {
+(lib.river_tram = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(44);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.river_tram = function() {
+(lib.smallplotva = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(45);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.smallplotva = function() {
+(lib.Smolino_end = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(46);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Smolino_end = function() {
+(lib.Smolino_map = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(47);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Smolino_map = function() {
+(lib.swim_sign_man01 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(48);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.swim_sign_man01 = function() {
+(lib.swim_sign_man02 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(49);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.swim_sign_man02 = function() {
+(lib.varbtn01 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(50);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.varbtn01 = function() {
+(lib.varbtn02 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(51);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.varbtn02 = function() {
+(lib.varbtn02_2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(52);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.varbtn02_2 = function() {
+(lib.varbtn03 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(53);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.varbtn03 = function() {
+(lib.varbtn03_2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(54);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.varbtn03_2 = function() {
+(lib.waterdrop = function() {
 	this.initialize(ss["Smolino_atlas_"]);
 	this.gotoAndStop(55);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.waterdrop = function() {
-	this.initialize(ss["Smolino_atlas_"]);
-	this.gotoAndStop(56);
-}).prototype = p = new cjs.Sprite();
-
-
-
 (lib.waterdrop2 = function() {
 	this.initialize(ss["Smolino_atlas_"]);
-	this.gotoAndStop(57);
+	this.gotoAndStop(56);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -445,7 +438,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// tdot
-	this.instance = new lib.CachedTexturedBitmap_11();
+	this.instance = new lib.CachedTexturedBitmap_20();
 	this.instance.parent = this;
 	this.instance.setTransform(-0.5,-0.5,0.5,0.5);
 
@@ -466,46 +459,42 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.timeline.addTween(cjs.Tween.get(this).wait(78).call(this.frame_78).wait(1));
 
 	// znak
-	this.instance = new lib.CachedTexturedBitmap_39();
+	this.instance = new lib.CachedTexturedBitmap_17();
 	this.instance.parent = this;
 	this.instance.setTransform(0.95,0.45,1.3944,1.3944);
 
-	this.instance_1 = new lib.CachedTexturedBitmap_35();
+	this.instance_1 = new lib.CachedTexturedBitmap_12();
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(0.95,0.45,1.3944,1.3944);
 
-	this.instance_2 = new lib.CachedTexturedBitmap_36();
+	this.instance_2 = new lib.CachedTexturedBitmap_16();
 	this.instance_2.parent = this;
 	this.instance_2.setTransform(0.95,0.45,1.3944,1.3944);
 
-	this.instance_3 = new lib.CachedTexturedBitmap_45();
+	this.instance_3 = new lib.CachedTexturedBitmap_18();
 	this.instance_3.parent = this;
 	this.instance_3.setTransform(0.95,0.45,1.3944,1.3944);
 
-	this.instance_4 = new lib.CachedTexturedBitmap_46();
-	this.instance_4.parent = this;
-	this.instance_4.setTransform(0.95,0.45,1.3944,1.3944);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},20).to({state:[{t:this.instance_2}]},8).to({state:[{t:this.instance_1}]},10).to({state:[{t:this.instance_2}]},10).to({state:[{t:this.instance_1}]},10).to({state:[{t:this.instance_3}]},10).to({state:[{t:this.instance_4}]},10).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},20).to({state:[{t:this.instance}]},8).to({state:[{t:this.instance_2}]},10).to({state:[{t:this.instance}]},10).to({state:[{t:this.instance_2}]},10).to({state:[{t:this.instance}]},10).to({state:[{t:this.instance_3}]},10).wait(1));
 
 	// man
-	this.instance_5 = new lib.swim_sign_man01();
+	this.instance_4 = new lib.swim_sign_man01();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(66,100);
+
+	this.instance_5 = new lib.swim_sign_man02();
 	this.instance_5.parent = this;
 	this.instance_5.setTransform(66,100);
 
-	this.instance_6 = new lib.swim_sign_man02();
-	this.instance_6.parent = this;
-	this.instance_6.setTransform(66,100);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_5}]}).to({state:[{t:this.instance_5}]},20).to({state:[{t:this.instance_5}]},8).to({state:[{t:this.instance_5}]},10).to({state:[{t:this.instance_5}]},10).to({state:[{t:this.instance_5}]},10).to({state:[{t:this.instance_5}]},10).to({state:[{t:this.instance_6}]},10).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(68).to({_off:true},10).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_4}]}).to({state:[{t:this.instance_4}]},20).to({state:[{t:this.instance_4}]},8).to({state:[{t:this.instance_4}]},10).to({state:[{t:this.instance_4}]},10).to({state:[{t:this.instance_4}]},10).to({state:[{t:this.instance_4}]},10).to({state:[{t:this.instance_5}]},10).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(68).to({_off:true},10).wait(1));
 
 	// whitecircle
-	this.instance_7 = new lib.CachedTexturedBitmap_38();
-	this.instance_7.parent = this;
-	this.instance_7.setTransform(20,17.95,1.3944,1.3944);
+	this.instance_6 = new lib.CachedTexturedBitmap_19();
+	this.instance_6.parent = this;
+	this.instance_6.setTransform(20,17.95,1.3944,1.3944);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(79));
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(79));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(1,0.5,287.2,287.2);
@@ -528,19 +517,19 @@ p.nominalBounds = new cjs.Rectangle(1,0.5,287.2,287.2);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(4).call(this.frame_4).wait(1));
 
 	// Water
-	this.instance = new lib.CachedTexturedBitmap_12();
+	this.instance = new lib.CachedTexturedBitmap_5();
 	this.instance.parent = this;
 	this.instance.setTransform(2.75,27.6,0.5,0.5);
 
-	this.instance_1 = new lib.CachedTexturedBitmap_13();
+	this.instance_1 = new lib.CachedTexturedBitmap_6();
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(2,27.75,0.5,0.5);
 
-	this.instance_2 = new lib.CachedTexturedBitmap_14();
+	this.instance_2 = new lib.CachedTexturedBitmap_7();
 	this.instance_2.parent = this;
 	this.instance_2.setTransform(3,26.25,0.5,0.5);
 
-	this.instance_3 = new lib.CachedTexturedBitmap_15();
+	this.instance_3 = new lib.CachedTexturedBitmap_8();
 	this.instance_3.parent = this;
 	this.instance_3.setTransform(3.25,26.1,0.5,0.5);
 
@@ -806,7 +795,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,120,50);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1).call(this.frame_2).wait(1));
 
 	// text
-	this.instance = new lib.CachedTexturedBitmap_40();
+	this.instance = new lib.CachedTexturedBitmap_21();
 	this.instance.parent = this;
 	this.instance.setTransform(64.55,68.65,0.5,0.5);
 	this.instance._off = true;
@@ -1361,7 +1350,7 @@ p.nominalBounds = new cjs.Rectangle(-135.4,0,582.9,52);
 	this.myText.parent = this;
 	this.myText.setTransform(90,350.2);
 
-	this.timeline.addTween(cjs.Tween.get(this.myText).wait(1).to({y:406.2},0).wait(1).to({x:48,y:386.2,lineWidth:504},0).wait(1).to({x:42.05,y:103.3,lineWidth:514},0).wait(2).to({x:42,y:108.3,text:"Академик А.Л. Яншин, побывавший на озере и нашедший в песчанике отпечатки древних растений, также считал, что смолинские пески способны излечить опорно-двигательную систему, воспалительные заболевания, рахит, паралич у больных, пришедших с фронта.\nОн как в воду смотрел – уже в годы Первой мировой войны на Челябинском море проходили реабилитацию раненые солдаты.",font:"italic 22px 'Arial'",color:"#92D1C4",lineHeight:26.55},0).wait(1).to({x:30,y:217.25,text:"",font:"24px 'Arial'",color:"#FFCC00",lineHeight:28.85,lineWidth:552},0).wait(1).to({x:44.05,y:337.6,text:"\nВ 1970–1990-е годы Смолино считалось одним из самых рыбных озёр области. ",font:"italic 22px 'Arial'",color:"#92D1C4",lineHeight:26.55,lineWidth:514},0).wait(1).to({x:48.2,y:252.6,text:"",font:"24px 'Arial'",color:"#FFCC00",lineHeight:28.85,lineWidth:504},0).wait(1).to({x:51,y:258.95,text:"В 2026 году пляж стал бесплатным, так как бизнес не смог брать плату за вход на береговую полосу",font:"italic 22px 'Arial'",color:"#92D1C4",lineHeight:26.55,lineWidth:514},0).wait(1).to({x:54.05,y:77,text:"",font:"24px 'Arial'",color:"#FFCC00",lineHeight:28.85},0).wait(1).to({x:42.05,y:103.3,lineWidth:512},0).wait(1).to({lineWidth:514},0).wait(1).to({x:42,y:69.3},0).wait(1).to({x:119,y:73.45,text:"Это был первый в городе открытый плавательный бассейн.",font:"italic 22px 'Arial'",color:"#92D1C4",lineHeight:26.55,lineWidth:413},0).wait(1).to({x:45,y:76.3,text:"",font:"24px 'Arial'",color:"#FFCC00",lineHeight:28.85,lineWidth:514},0).wait(1).to({x:42.05,y:103.3},0).wait(1).to({x:42,y:55.3,lineWidth:524},0).wait(1).to({x:42.05,y:103.3,lineWidth:514},0).wait(1).to({x:42,y:434.15,lineWidth:527},0).wait(1).to({x:42.05,y:103.3,lineWidth:514},0).wait(1).to({x:42,y:340.3},0).wait(1).to({y:74.3},0).wait(1).to({y:339.3},0).wait(1).to({y:346.65,text:"Проводя такое зарыбление, специалисты отрасли компенсируют ущерб окружающей природной среде от деятельности промышленных производств. Толстолобик и белый амур – рыбы-санитары, очищающие водоем.",font:"italic 22px 'Arial'",color:"#92D1C4",lineHeight:26.55},0).wait(1).to({y:351.25,text:"",font:"24px 'Arial'",color:"#FFCC00",lineHeight:28.85},0).wait(1).to({x:58,y:447.25},0).wait(1).to({x:149.35,y:361.8,text:"Чомга - птица 2026 года ",font:"italic 22px 'Arial'",color:"#92D1C4",lineHeight:26.55,lineWidth:316},0).wait(1).to({x:42.05,y:103.3,text:"",font:"24px 'Arial'",color:"#FFCC00",lineHeight:28.85,lineWidth:514},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.myText).wait(1).to({y:406.2},0).wait(1).to({x:48,y:386.2,lineWidth:504},0).wait(1).to({x:42.05,y:103.3,lineWidth:514},0).wait(2).to({x:42,y:108.3,text:"Академик А.Л. Яншин, побывавший на озере и нашедший в песчанике отпечатки древних растений, также считал, что смолинские пески способны излечить опорно-двигательную систему, воспалительные заболевания, рахит, паралич у больных, пришедших с фронта.\nОн как в воду смотрел – уже в годы Первой мировой войны на Челябинском море проходили реабилитацию раненые солдаты.",font:"italic 22px 'Arial'",color:"#92D1C4",lineHeight:26.55},0).wait(1).to({x:30,y:217.25,text:"",font:"24px 'Arial'",color:"#FFCC00",lineHeight:28.85,lineWidth:552},0).wait(1).to({x:44.05,y:337.6,text:"\nВ 1970–1990-е годы Смолино считалось одним из самых рыбных озёр области. ",font:"italic 22px 'Arial'",color:"#92D1C4",lineHeight:26.55,lineWidth:514},0).wait(1).to({x:48.2,y:252.6,text:"",font:"24px 'Arial'",color:"#FFCC00",lineHeight:28.85,lineWidth:504},0).wait(1).to({x:51,y:258.95,text:"В 2026 году пляж стал бесплатным, так как бизнес не смог брать плату за вход на береговую полосу",font:"italic 22px 'Arial'",color:"#92D1C4",lineHeight:26.55,lineWidth:514},0).wait(1).to({x:54.05,y:77,text:"",font:"24px 'Arial'",color:"#FFCC00",lineHeight:28.85},0).wait(1).to({x:42.05,y:103.3,lineWidth:512},0).wait(1).to({lineWidth:514},0).wait(1).to({x:42,y:69.3},0).wait(1).to({x:119,y:73.45,text:"Это был первый в городе открытый плавательный бассейн.",font:"italic 22px 'Arial'",color:"#92D1C4",lineHeight:26.55,lineWidth:413},0).wait(1).to({x:45,y:76.3,text:"",font:"24px 'Arial'",color:"#FFCC00",lineHeight:28.85,lineWidth:514},0).wait(1).to({x:42.05,y:103.3},0).wait(1).to({x:42,y:55.3,lineWidth:524},0).wait(1).to({x:42.05,y:103.3,lineWidth:514},0).wait(1).to({x:42,y:442.15,lineWidth:527},0).wait(1).to({x:42.05,y:103.3,lineWidth:514},0).wait(1).to({x:42,y:340.3},0).wait(1).to({y:74.3},0).wait(1).to({y:339.3},0).wait(1).to({y:346.65,text:"Проводя такое зарыбление, специалисты отрасли компенсируют ущерб окружающей природной среде от деятельности промышленных производств. Толстолобик и белый амур – рыбы-санитары, очищающие водоем.",font:"italic 22px 'Arial'",color:"#92D1C4",lineHeight:26.55},0).wait(1).to({y:351.25,text:"",font:"24px 'Arial'",color:"#FFCC00",lineHeight:28.85},0).wait(1).to({x:58,y:447.25},0).wait(1).to({x:149.35,y:361.8,text:"Чомга - птица 2026 года ",font:"italic 22px 'Arial'",color:"#92D1C4",lineHeight:26.55,lineWidth:316},0).wait(1).to({x:42.05,y:103.3,text:"",font:"24px 'Arial'",color:"#FFCC00",lineHeight:28.85,lineWidth:514},0).wait(1));
 
 	// Pics
 	this.qpics = new lib.Qpics();
@@ -1392,7 +1381,7 @@ p.nominalBounds = new cjs.Rectangle(-135.4,0,582.9,52);
 	this.v4.parent = this;
 	this.v4.setTransform(302.05,692.95,1,1,0,0,0,156.7,16.6);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.v1,p:{x:301.05,y:491.9}},{t:this.v2,p:{x:301.05,y:564.9}}]}).to({state:[{t:this.v1,p:{x:302.05,y:522.95}},{t:this.v2,p:{x:302.05,y:588.95}},{t:this.v3,p:{y:655.95,x:302.05}}]},1).to({state:[{t:this.v1,p:{x:302.05,y:504.95}},{t:this.v2,p:{x:302.05,y:566.95}},{t:this.v3,p:{y:629.95,x:302.05}},{t:this.v4,p:{x:302.05,y:692.95}}]},1).to({state:[{t:this.v1,p:{x:300.05,y:273.05}},{t:this.v2,p:{x:300.05,y:335.05}},{t:this.v3,p:{y:398.05,x:300.05}},{t:this.v4,p:{x:300.05,y:461.05}}]},1).to({state:[{t:this.v1,p:{x:300.05,y:283.05}},{t:this.v2,p:{x:300.05,y:345.05}},{t:this.v3,p:{y:408.05,x:300.05}},{t:this.v4,p:{x:300.05,y:471.05}}]},1).to({state:[{t:this.v1,p:{x:292.05,y:315.05}},{t:this.v2,p:{x:292.05,y:377.05}},{t:this.v3,p:{y:440.05,x:292.05}},{t:this.v4,p:{x:292.05,y:503.05}}]},2).to({state:[{t:this.v1,p:{x:300.05,y:364.95}},{t:this.v2,p:{x:300.05,y:426.95}},{t:this.v3,p:{y:489.95,x:300.05}},{t:this.v4,p:{x:300.05,y:552.95}}]},2).to({state:[{t:this.v1,p:{x:303.05,y:335.95}},{t:this.v2,p:{x:303.05,y:397.95}},{t:this.v3,p:{y:460.95,x:303.05}},{t:this.v4,p:{x:303.05,y:523.95}}]},2).to({state:[{t:this.v1,p:{x:299.05,y:252}},{t:this.v2,p:{x:299.05,y:314}},{t:this.v3,p:{y:377,x:299.05}},{t:this.v4,p:{x:299.05,y:440}}]},1).to({state:[{t:this.v1,p:{x:300.05,y:303}},{t:this.v2,p:{x:300.05,y:365}},{t:this.v3,p:{y:428,x:300.05}},{t:this.v4,p:{x:300.05,y:491}}]},2).to({state:[{t:this.v1,p:{x:308.05,y:206}},{t:this.v2,p:{x:308.05,y:268}},{t:this.v3,p:{y:331,x:308.05}},{t:this.v4,p:{x:308.05,y:394}}]},2).to({state:[{t:this.v1,p:{x:299.05,y:333}},{t:this.v2,p:{x:299.05,y:395}},{t:this.v3,p:{y:458,x:299.05}},{t:this.v4,p:{x:299.05,y:521}}]},2).to({state:[{t:this.v1,p:{x:302.05,y:544.95}},{t:this.v2,p:{x:302.05,y:606.95}},{t:this.v3,p:{y:669.95,x:302.05}},{t:this.v4,p:{x:302.05,y:732.95}}]},2).to({state:[{t:this.v1,p:{x:298.05,y:216}},{t:this.v2,p:{x:298.05,y:278}},{t:this.v3,p:{y:341,x:298.05}},{t:this.v4,p:{x:298.05,y:404}}]},1).to({state:[{t:this.v1,p:{x:302.05,y:441.95}},{t:this.v2,p:{x:302.05,y:503.95}},{t:this.v3,p:{y:566.95,x:302.05}},{t:this.v4,p:{x:302.05,y:629.95}}]},1).to({state:[{t:this.v1,p:{x:299.05,y:187}},{t:this.v2,p:{x:299.05,y:249}},{t:this.v3,p:{y:312,x:299.05}},{t:this.v4,p:{x:299.05,y:375}}]},1).to({state:[{t:this.v1,p:{x:306.05,y:449.55}},{t:this.v2,p:{x:306.05,y:511.55}},{t:this.v3,p:{y:574.55,x:306.05}},{t:this.v4,p:{x:306.05,y:637.55}}]},1).to({state:[{t:this.v1,p:{x:302.05,y:513.95}},{t:this.v2,p:{x:302.05,y:575.95}},{t:this.v3,p:{y:638.95,x:302.05}},{t:this.v4,p:{x:302.05,y:701.95}}]},2).to({state:[{t:this.v1,p:{x:304.05,y:539.95}},{t:this.v2,p:{x:304.05,y:601.95}},{t:this.v3,p:{y:664.95,x:304.05}},{t:this.v4,p:{x:304.05,y:727.95}}]},1).to({state:[{t:this.v1,p:{x:302.05,y:520.95}},{t:this.v2,p:{x:302.05,y:582.95}},{t:this.v3,p:{y:645.95,x:302.05}},{t:this.v4,p:{x:302.05,y:708.95}}]},2).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.v1,p:{x:301.05,y:491.9}},{t:this.v2,p:{x:301.05,y:564.9}}]}).to({state:[{t:this.v1,p:{x:302.05,y:522.95}},{t:this.v2,p:{x:302.05,y:588.95}},{t:this.v3,p:{y:655.95,x:302.05}}]},1).to({state:[{t:this.v1,p:{x:302.05,y:504.95}},{t:this.v2,p:{x:302.05,y:566.95}},{t:this.v3,p:{y:629.95,x:302.05}},{t:this.v4,p:{x:302.05,y:692.95}}]},1).to({state:[{t:this.v1,p:{x:300.05,y:273.05}},{t:this.v2,p:{x:300.05,y:335.05}},{t:this.v3,p:{y:398.05,x:300.05}},{t:this.v4,p:{x:300.05,y:461.05}}]},1).to({state:[{t:this.v1,p:{x:300.05,y:283.05}},{t:this.v2,p:{x:300.05,y:345.05}},{t:this.v3,p:{y:408.05,x:300.05}},{t:this.v4,p:{x:300.05,y:471.05}}]},1).to({state:[{t:this.v1,p:{x:292.05,y:315.05}},{t:this.v2,p:{x:292.05,y:377.05}},{t:this.v3,p:{y:440.05,x:292.05}},{t:this.v4,p:{x:292.05,y:503.05}}]},2).to({state:[{t:this.v1,p:{x:300.05,y:364.95}},{t:this.v2,p:{x:300.05,y:426.95}},{t:this.v3,p:{y:489.95,x:300.05}},{t:this.v4,p:{x:300.05,y:552.95}}]},2).to({state:[{t:this.v1,p:{x:303.05,y:335.95}},{t:this.v2,p:{x:303.05,y:397.95}},{t:this.v3,p:{y:460.95,x:303.05}},{t:this.v4,p:{x:303.05,y:523.95}}]},2).to({state:[{t:this.v1,p:{x:299.05,y:252}},{t:this.v2,p:{x:299.05,y:314}},{t:this.v3,p:{y:377,x:299.05}},{t:this.v4,p:{x:299.05,y:440}}]},1).to({state:[{t:this.v1,p:{x:300.05,y:303}},{t:this.v2,p:{x:300.05,y:365}},{t:this.v3,p:{y:428,x:300.05}},{t:this.v4,p:{x:300.05,y:491}}]},2).to({state:[{t:this.v1,p:{x:308.05,y:206}},{t:this.v2,p:{x:308.05,y:268}},{t:this.v3,p:{y:331,x:308.05}},{t:this.v4,p:{x:308.05,y:394}}]},2).to({state:[{t:this.v1,p:{x:299.05,y:333}},{t:this.v2,p:{x:299.05,y:395}},{t:this.v3,p:{y:458,x:299.05}},{t:this.v4,p:{x:299.05,y:521}}]},2).to({state:[{t:this.v1,p:{x:302.05,y:552.95}},{t:this.v2,p:{x:302.05,y:614.95}},{t:this.v3,p:{y:677.95,x:302.05}},{t:this.v4,p:{x:302.05,y:740.95}}]},2).to({state:[{t:this.v1,p:{x:298.05,y:216}},{t:this.v2,p:{x:298.05,y:278}},{t:this.v3,p:{y:341,x:298.05}},{t:this.v4,p:{x:298.05,y:404}}]},1).to({state:[{t:this.v1,p:{x:302.05,y:441.95}},{t:this.v2,p:{x:302.05,y:503.95}},{t:this.v3,p:{y:566.95,x:302.05}},{t:this.v4,p:{x:302.05,y:629.95}}]},1).to({state:[{t:this.v1,p:{x:299.05,y:187}},{t:this.v2,p:{x:299.05,y:249}},{t:this.v3,p:{y:312,x:299.05}},{t:this.v4,p:{x:299.05,y:375}}]},1).to({state:[{t:this.v1,p:{x:306.05,y:449.55}},{t:this.v2,p:{x:306.05,y:511.55}},{t:this.v3,p:{y:574.55,x:306.05}},{t:this.v4,p:{x:306.05,y:637.55}}]},1).to({state:[{t:this.v1,p:{x:302.05,y:513.95}},{t:this.v2,p:{x:302.05,y:575.95}},{t:this.v3,p:{y:638.95,x:302.05}},{t:this.v4,p:{x:302.05,y:701.95}}]},2).to({state:[{t:this.v1,p:{x:304.05,y:539.95}},{t:this.v2,p:{x:304.05,y:601.95}},{t:this.v3,p:{y:664.95,x:304.05}},{t:this.v4,p:{x:304.05,y:727.95}}]},1).to({state:[{t:this.v1,p:{x:302.05,y:520.95}},{t:this.v2,p:{x:302.05,y:582.95}},{t:this.v3,p:{y:645.95,x:302.05}},{t:this.v4,p:{x:302.05,y:708.95}}]},2).wait(1));
 
 	// Qback
 	this.qsback = new lib.QSetBack();
@@ -1402,7 +1391,7 @@ p.nominalBounds = new cjs.Rectangle(-135.4,0,582.9,52);
 	this.timeline.addTween(cjs.Tween.get(this.qsback).wait(29));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(28,53.3,555.8,715.1);
+p.nominalBounds = new cjs.Rectangle(28,53.3,555.8,723.1);
 
 
 (lib.QLocation = function(mode,startPosition,loop) {
@@ -1941,7 +1930,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Smolino_atlas_.png?1788512919018", id:"Smolino_atlas_"}
+		{src:"images/Smolino_atlas_.png?1788745540935", id:"Smolino_atlas_"}
 	],
 	preloads: []
 };
